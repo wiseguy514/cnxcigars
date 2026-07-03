@@ -1,0 +1,12 @@
+.git
+.git/
+node_modules
+node_modules/
+_archive
+_archive/
+team
+team/
+*.md
+*.txt
+handover.md
+rules.md

@@ -1,0 +1,10 @@
+.git/
+.claude/
+_archive/
+node_modules/
+dist/
+*.md
+*.toml
+*.json
+*.log
+*.lock
