@@ -4,17 +4,7 @@ const TYPE_LABELS = {
   other: "General Enquiry",
 };
 
-export default {
-  async fetch(request, env) {
-    const url = new URL(request.url);
-    if (request.method === "POST" && url.pathname === "/api/contact") {
-      return handleContact(request, env);
-    }
-    return env.ASSETS.fetch(request);
-  },
-};
-
-async function handleContact(request, env) {
+export async function onRequestPost({ request, env }) {
   let data;
   try {
     data = await request.json();

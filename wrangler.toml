@@ -1,7 +1,5 @@
 name = "cnxcigarsv2"
-main = "worker.js"
 compatibility_date = "2026-06-21"
 
 [assets]
 directory = "."
-binding = "ASSETS"
