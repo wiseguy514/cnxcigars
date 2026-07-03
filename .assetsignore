@@ -8,3 +8,4 @@ dist/
 *.json
 *.log
 *.lock
+worker.js

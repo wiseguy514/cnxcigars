@@ -579,6 +579,10 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
       <div class="bio-body">
         <p class="r">Walk-ins are always welcome during opening hours. For a private session, a tasting, or a B2B consultation, a message in advance is all it takes. Send a message via LINE or WhatsApp, or use the form below. We respond within 48 hours.</p>
         <form class="contact-form r d1" id="contact-form">
+          <div style="position:absolute;left:-9999px" aria-hidden="true">
+            <label for="f-hp">Leave this field empty</label>
+            <input type="text" id="f-hp" name="hp" tabindex="-1" autocomplete="off">
+          </div>
           <div class="form-group">
             <label for="f-name">Name</label>
             <input type="text" id="f-name" name="name" required>
@@ -790,16 +794,37 @@ document.querySelectorAll('.r,.r-img').forEach(el=>obs.observe(el));
 })();
 
 // CONTACT FORM
-document.getElementById('contact-form').addEventListener('submit',function(e){
+document.getElementById('contact-form').addEventListener('submit',async function(e){
   e.preventDefault();
-  const btn=this.querySelector('button[type="submit"]');
-  btn.textContent='Enquiry Received';
+  const form=this;
+  const btn=form.querySelector('button[type="submit"]');
+  const originalLabel=btn.textContent;
+  btn.textContent='Sending...';
   btn.disabled=true;
   btn.style.opacity='.6';
-  this.reset();
-  document.querySelector('.custom-select-value').textContent='Private Lounge Reservation';
-  document.getElementById('f-type').value='private';
-  document.querySelectorAll('.custom-select-option').forEach((o,i)=>o.classList.toggle('selected',i===0));
+  const payload={
+    name:form.querySelector('#f-name').value,
+    entity:form.querySelector('#f-entity').value,
+    email:form.querySelector('#f-email').value,
+    type:form.querySelector('#f-type').value,
+    message:form.querySelector('#f-message').value,
+    hp:form.querySelector('#f-hp').value
+  };
+  try{
+    const res=await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+    const result=await res.json();
+    if(!res.ok||!result.ok){throw new Error(result.error||'Send failed');}
+    btn.textContent='Enquiry Received';
+    form.reset();
+    document.querySelector('.custom-select-value').textContent='Private Lounge Reservation';
+    document.getElementById('f-type').value='private';
+    document.querySelectorAll('.custom-select-option').forEach((o,i)=>o.classList.toggle('selected',i===0));
+  }catch(err){
+    btn.textContent='Something went wrong, please try again';
+    btn.disabled=false;
+    btn.style.opacity='1';
+    setTimeout(()=>{btn.textContent=originalLabel;},4000);
+  }
 });
 
 // FAQ
