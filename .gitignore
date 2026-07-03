@@ -32,6 +32,8 @@ coverage/
 # Claude / project docs
 .claude/
 .md/
+handover.md
+rules.md
 
 # Temp/archive
 _archive/
