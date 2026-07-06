@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Cigar Education Codex | CNX Cigars Chiang Mai</title>
+<meta name="description" content="An exhaustive technical education in cigar terroir, construction, climate science, and ritual — the same curriculum every CNX Cigars curator is examined on.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://cnxcigars.com/education.html">
+<link rel="alternate" hreflang="en" href="https://cnxcigars.com/education.html">
+<link rel="alternate" hreflang="th" href="https://cnxcigars.com/th/education.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://cnxcigars.com/zh/education.html">
+<link rel="alternate" hreflang="x-default" href="https://cnxcigars.com/education.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cnxcigars.com/education.html">
+<meta property="og:title" content="The Cigar Education Codex | CNX Cigars">
+<meta property="og:description" content="An exhaustive technical education in cigar terroir, construction, climate science, and ritual — the same curriculum every CNX Cigars curator is examined on.">
+<meta property="og:image" content="https://cnxcigars.com/images/cnxcigars-cnx-cigars-logo-elephant-circle-black.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Cigar Education Codex | CNX Cigars">
+<meta name="twitter:description" content="An exhaustive technical education in cigar terroir, construction, climate science, and ritual — the same curriculum every CNX Cigars curator is examined on.">
+<meta name="twitter:image" content="https://cnxcigars.com/images/cnxcigars-cnx-cigars-logo-elephant-circle-black.webp">
+<link rel="icon" type="image/x-icon" href="./favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32.png">
+<link rel="apple-touch-icon" href="./favicon/apple-touch-icon.png">
+<link rel="manifest" href="./site.webmanifest">
+<link rel="preload" href="./fonts/woff2/TrajanPro-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./fonts/woff2/Cormorant_Garamond/CormorantGaramond-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./fonts/woff2/DM_Sans/DMSans-VariableFont_opsz,wght.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./images/cnxcigars-cnx-cigars-amir-portrait-humidor-holding-cigar.webp" as="image">
+<script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"ANALYTICS_TOKEN_PLACEHOLDER"}'></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"The Cigar Education Codex","about":"Cigar terroir, construction, humidor science, and smoking ritual","publisher":{"@type":"Organization","name":"CNX Cigars","url":"https://cnxcigars.com"},"url":"https://cnxcigars.com/education.html"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://cnxcigars.com/"},{"@type":"ListItem","position":2,"name":"Education","item":"https://cnxcigars.com/education.html"}]}</script>
+<style>
+/* FONTS */
+@font-face{font-family:'Trajan';src:url('./fonts/woff2/TrajanPro-Regular.woff2')format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Cormorant';src:url('./fonts/woff2/Cormorant_Garamond/CormorantGaramond-VariableFont_wght.woff2')format('woff2');font-weight:100 900;font-display:swap}
+@font-face{font-family:'Cormorant';src:url('./fonts/woff2/Cormorant_Garamond/CormorantGaramond-Italic-VariableFont_wght.woff2')format('woff2');font-weight:100 900;font-style:italic;font-display:swap}
+@font-face{font-family:'DM Sans';src:url('./fonts/woff2/DM_Sans/DMSans-VariableFont_opsz,wght.woff2')format('woff2');font-weight:100 900;font-display:swap}
+@font-face{font-family:'DM Serif';src:url('./fonts/woff2/DM_Serif_Display/DMSerifDisplay-Regular.woff2')format('woff2');font-weight:400;font-display:swap}
+
+/* RESET */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{overflow-x:hidden;background:#080808}
+img{display:block;max-width:100%;height:auto}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+button{cursor:pointer;border:none;background:none;font:inherit}
+
+/* DESIGN TOKENS */
+:root{
+  --ink:#080808;
+  --ink-2:#0f0f0f;
+  --ink-3:#161616;
+  --gold:#D4AF37;
+  --gold-dim:rgba(212,175,55,.15);
+  --gold-faint:rgba(212,175,55,.06);
+  --cream:#f0ece4;
+  --stone:#c8c4bc;
+  --ash:#787068;
+  --border:rgba(255,255,255,.07);
+  --border-hi:rgba(255,255,255,.13);
+  --f-brand:'Trajan',Georgia,serif;
+  --f-display:'Cormorant','DM Serif',Georgia,serif;
+  --f-body:'DM Sans',system-ui,sans-serif;
+  --ease-expo:cubic-bezier(.16,1,.3,1);
+  --g:clamp(1.2rem,4vw,2.2rem);
+  --max:1380px;
+}
+
+body{font-family:var(--f-body);color:var(--cream);background:var(--ink)}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:var(--g);padding-right:var(--g)}
+
+/* TYPE */
+.t-label{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;font-weight:400;color:var(--gold)}
+.t-body{font-size:clamp(.88rem,1.1vw,1rem);line-height:1.8;color:var(--ash)}
+.t-body-lg{font-size:clamp(.95rem,1.3vw,1.08rem);line-height:1.8;color:var(--stone)}
+
+/* BUTTONS */
+.btn-gold{display:inline-block;padding:.85rem 2rem;background:var(--gold);color:var(--ink);font-family:var(--f-body);font-size:.74rem;letter-spacing:.13em;text-transform:uppercase;font-weight:500;transition:background .22s}
+.btn-gold:hover{background:#c49a28}
+.btn-outline{display:inline-block;padding:.85rem 2rem;border:1px solid var(--border-hi);color:var(--stone);font-size:.74rem;letter-spacing:.13em;text-transform:uppercase;transition:border-color .22s,color .22s}
+.btn-outline:hover{border-color:var(--stone);color:var(--cream)}
+.btn-grp{display:flex;gap:1rem;flex-wrap:wrap}
+
+/* REVEAL */
+.r,.r-img{opacity:0;transition-property:opacity,transform;transition-duration:.95s;transition-timing-function:var(--ease-expo)}
+.r{transform:translateY(28px)}
+.r-img{transform:scale(1.05)}
+.r.in,.r-img.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.22s}.d3{transition-delay:.38s}.d4{transition-delay:.54s}.d5{transition-delay:.7s}
+@media(prefers-reduced-motion:reduce){.r,.r-img{transition:none!important;opacity:1;transform:none}}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:1.5rem var(--g);transition:background .4s,backdrop-filter .4s,padding .3s}
+.nav.dim{background:rgba(8,8,8,.9);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:1rem var(--g)}
+.nav-logo{font-family:var(--f-brand);font-size:1.1rem;color:var(--gold);letter-spacing:.5em}
+.nav-links{display:flex;gap:2rem;align-items:center}
+.nav-links a{font-size:.95rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(240,236,228,.6);transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;padding:.55rem 1.4rem;border:1px solid rgba(212,175,55,.3);color:var(--gold);transition:background .2s,color .2s}
+.nav-cta:hover{background:var(--gold);color:var(--ink)}
+.burger{display:none;flex-direction:column;gap:6px;padding:4px}
+.burger span{display:block;width:26px;height:1px;background:var(--cream);transition:transform .3s,opacity .3s}
+.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mob-menu{position:fixed;inset:0;z-index:190;background:var(--ink-2);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2rem;opacity:0;pointer-events:none;transition:opacity .4s}
+.mob-menu.open{opacity:1;pointer-events:all}
+.mob-menu a{font-family:var(--f-display);font-size:clamp(2rem,7vw,3.2rem);font-weight:300;color:var(--cream);transition:color .2s}
+.mob-menu a:hover{color:var(--gold)}
+
+/* PAGE HERO */
+.pg-hero{padding:clamp(8rem,14vw,13rem) 0 clamp(5rem,9vw,9rem);background:var(--ink);border-bottom:1px solid var(--border)}
+.pg-hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(3rem,8vw,10rem);align-items:end}
+.pg-hero-img{position:relative;aspect-ratio:3/4;overflow:hidden}
+.pg-hero-img img{width:100%;height:100%;object-fit:cover;object-position:top center}
+.pg-hero-badge{position:absolute;bottom:2rem;left:2rem;background:rgba(8,8,8,.85);border:1px solid var(--border-hi);padding:1.2rem 1.6rem;backdrop-filter:blur(8px)}
+.pg-hero-badge .f-badge-label{font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.3rem}
+.pg-hero-badge p{font-size:.75rem;color:var(--stone)}
+.pg-hero-text .t-label{margin-bottom:1.5rem}
+.pg-hero-text h1{font-family:var(--f-display);font-weight:300;font-size:clamp(3rem,7vw,6.5rem);color:var(--cream);line-height:1.05;letter-spacing:-.02em;margin-bottom:2rem}
+.pg-hero-text blockquote{font-family:var(--f-display);font-size:clamp(1.15rem,1.8vw,1.5rem);font-weight:300;font-style:italic;color:var(--stone);line-height:1.6;border-left:1px solid var(--gold);padding-left:1.5rem;margin-bottom:2.5rem}
+
+/* BIO SECTIONS */
+.bio-section{padding:clamp(5rem,9vw,9rem) 0;border-top:1px solid var(--border)}
+.bio-section:nth-child(odd){background:var(--ink-2)}
+.bio-section:nth-child(even){background:var(--ink)}
+.bio-grid{display:grid;grid-template-columns:1fr 2fr;gap:clamp(3rem,8vw,8rem);align-items:start}
+.bio-grid.flip{grid-template-columns:2fr 1fr}
+.bio-label{position:sticky;top:8rem}
+.bio-label .t-label{margin-bottom:1rem}
+.bio-label h2{font-family:var(--f-display);font-weight:300;font-size:clamp(1.6rem,3vw,2.5rem);color:var(--cream);line-height:1.2}
+.bio-body p{font-size:clamp(.9rem,1.15vw,1.05rem);line-height:1.85;color:var(--stone);margin-bottom:1.75rem}
+.bio-body p:last-child{margin-bottom:0}
+.bio-body .philosophy-item{margin-bottom:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid var(--border)}
+.bio-body .philosophy-item:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.bio-body .ph-heading{font-family:var(--f-display);font-size:1.1rem;font-weight:400;font-style:italic;color:var(--gold);margin-bottom:.75rem}
+.bio-img{aspect-ratio:3/4;overflow:hidden;margin-bottom:2rem}
+.bio-img img{width:100%;height:100%;object-fit:cover}
+
+/* PULL QUOTE */
+.pull-quote{padding:clamp(4rem,7vw,7rem) 0;background:var(--ink-3);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.pull-quote blockquote{font-family:var(--f-display);font-size:clamp(1.5rem,3.5vw,3rem);font-weight:300;font-style:italic;color:var(--cream);line-height:1.35;max-width:900px;margin:0 auto;text-align:center}
+.pull-quote cite{display:block;margin-top:2rem;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);text-align:center;font-style:normal}
+
+/* CTA CLOSING */
+.bio-cta{padding:clamp(5rem,9vw,9rem) 0;background:var(--ink);border-top:1px solid var(--border);text-align:center}
+.bio-cta h2{font-family:var(--f-display);font-weight:300;font-size:clamp(2rem,4.5vw,4rem);color:var(--cream);line-height:1.15;margin-bottom:1.5rem}
+.bio-cta p{font-size:clamp(.9rem,1.2vw,1.05rem);color:var(--stone);line-height:1.8;max-width:620px;margin:0 auto 3rem}
+
+/* FOOTER */
+footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(4rem,7vw,6rem) 0 2rem}
+.ft-top{position:relative;display:grid;grid-template-columns:1.4fr 1fr 1.2fr;gap:3rem;margin-bottom:3rem}
+.ft-logo{position:absolute;right:0;top:50%;transform:translateY(-50%)}
+.ft-logo img{width:234px;height:234px}
+.ft-brand .brand-mark{font-family:var(--f-brand);font-size:1.1rem;letter-spacing:.44em;color:var(--gold);margin-bottom:.4rem}
+.ft-brand .brand-tag{font-size:.9rem;letter-spacing:.18em;text-transform:uppercase;color:#867E77;margin-bottom:1.2rem}
+.ft-brand p{font-size:1.07rem;color:#867E77;line-height:1.75}
+.ft-col h4{font-size:.9rem;letter-spacing:.2em;text-transform:uppercase;color:#CECAC3;margin-bottom:1.2rem}
+.ft-col ul{display:flex;flex-direction:column;gap:.7rem}
+.ft-col a{font-size:1.07rem;color:#867E77;transition:color .2s}
+.ft-col a:hover{color:var(--cream)}
+.ft-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:2rem;border-top:1px solid var(--border);flex-wrap:wrap;gap:1rem}
+.ft-bottom p{font-size:.865rem;color:#867E77}
+.ft-legal{text-align:center;padding:0 var(--g) 1.5rem;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:#938D86;line-height:1.5}
+.ft-links{display:flex;gap:1.5rem}
+.ft-links a{font-size:.865rem;color:#867E77;transition:color .2s}
+.ft-links a:hover{color:var(--cream)}
+
+/* DOT CURSOR */
+@media(pointer:fine){
+  *{cursor:none!important}
+  .cursor{position:fixed;top:0;left:0;width:8px;height:8px;background:#D4AF37;border-radius:50%;pointer-events:none;z-index:99999;will-change:transform;transform:translate(-50%,-50%)}
+  .cursor-ring{position:fixed;top:0;left:0;width:32px;height:32px;border:1px solid rgba(212,175,55,.45);border-radius:50%;pointer-events:none;z-index:99998;will-change:transform;transform:translate(-50%,-50%);transition:width .2s ease,height .2s ease,border-color .2s ease}
+  .cursor.light{background:#fcfaf2}
+  .cursor-ring.light{border-color:rgba(252,250,242,.35)}
+}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+  .pg-hero-inner,.bio-grid,.bio-grid.flip{grid-template-columns:1fr}
+  .bio-label{position:static}
+  .ft-top{grid-template-columns:1fr 1fr}
+  .ft-logo{display:none}
+}
+@media(max-width:768px){
+  .nav-links,.nav-cta{display:none}
+  .burger{display:flex}
+  .ft-top{grid-template-columns:1fr}
+}
+
+/* STAFF COMPETENCY INSIGHT */
+.competency-block{margin-top:3rem;padding:2.2rem clamp(1.5rem,3vw,2.5rem);background:var(--gold-faint);border:1px solid var(--gold-dim);border-left:3px solid var(--gold);position:relative;transform:translate3d(0,0,0);will-change:transform,opacity}
+.competency-block .cb-label{font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.9rem;display:flex;align-items:center;gap:.6rem}
+.competency-block .cb-label::before{content:'';display:inline-block;width:18px;height:1px;background:var(--gold)}
+.competency-block p{font-size:.92rem;line-height:1.85;color:var(--stone);margin-bottom:0}
+.competency-block strong{color:var(--cream);font-weight:500}
+
+/* CHAPTER HEADINGS */
+.chapter-num{font-family:var(--f-display);font-size:.85rem;font-style:italic;color:var(--gold);letter-spacing:.1em;margin-bottom:.6rem;display:block}
+</style>
+<style>
+.mob-menu{justify-content:flex-start!important;overflow-y:auto;padding:5rem 1.5rem 3rem!important}
+.mob-group{width:100%;text-align:center}
+.mob-group-btn{background:none;border:none;cursor:pointer;font-family:var(--f-display);font-size:clamp(2rem,7vw,3.2rem);font-weight:300;color:var(--cream);transition:color .2s;padding:0}
+.mob-group-btn:hover,.mob-group-btn.active{color:var(--gold)}
+.mob-sub{display:none!important;flex-direction:column;align-items:center;gap:.6rem;padding:.5rem 0 .2rem}
+.mob-sub.open{display:flex!important}
+.mob-sub-inner{width:100%;text-align:center}
+.mob-sub-btn{font-size:clamp(1.1rem,4vw,1.5rem)!important;color:var(--ash)!important;margin-bottom:.2rem}
+.mob-sub-btn.active{color:var(--gold)!important}
+.mob-sub-2{display:none;flex-direction:column;align-items:center;gap:.4rem;padding:.3rem 0 .2rem}
+.mob-sub-2.open{display:flex}
+.mob-sub-2 a{font-family:var(--f-display);font-size:clamp(.75rem,2.4vw,.9rem);letter-spacing:.1em;text-transform:uppercase;color:var(--ash);transition:color .2s}
+.mob-sub-2 a:hover{color:var(--gold)}
+.mob-sub>a{font-family:var(--f-display);font-size:clamp(1rem,3.5vw,1.25rem);letter-spacing:.12em;text-transform:uppercase;color:var(--ash);transition:color .2s}
+.mob-sub>a:hover{color:var(--gold)}
+#gate{position:fixed;inset:0;z-index:9000;background:var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem;transition:opacity .6s var(--ease-expo)}
+#gate.out{opacity:0;pointer-events:none}
+.gate-mark{font-family:var(--f-brand);font-size:clamp(2.2rem,6vw,4rem);color:var(--gold);letter-spacing:.5em;margin-bottom:.25rem}
+.gate-sub{font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;color:var(--ash);margin-bottom:3.5rem}
+.gate-q{font-family:var(--f-display);font-size:clamp(1.5rem,3vw,2.2rem);font-weight:300;color:var(--cream);margin-bottom:.7rem}
+.gate-copy{font-size:.87rem;color:var(--ash);margin-bottom:2.5rem;max-width:380px;line-height:1.7}
+.gate-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.gate-legal{font-size:.62rem;color:rgba(120,112,104,.45);margin-top:2rem;max-width:360px;line-height:1.7}
+</style></head>
+<body>
+
+<div id="gate">
+  <div class="gate-mark" style="font-size:clamp(1.6rem,4vw,2.8rem);letter-spacing:.32em">CNX Cigars</div>
+  <div class="gate-sub">International Cigar Bar &amp; Lounge &ndash; Chiang Mai</div>
+  <p class="gate-q">Are you 20 years of age or older?</p>
+  <p class="gate-copy">Under the Thailand Tobacco Products Control Act, access to tobacco-related archives, collections, and lounge premises is restricted to persons aged 20 years or older. By clicking below, you confirm your legal compliance and unconditionally agree to our Terms of Service and Privacy Policy.</p>
+  <div class="gate-btns">
+    <button class="btn-gold" onclick="enterSite()">Yes, I am 20 or older</button>
+    <button class="btn-outline" onclick="window.location.href='https://www.google.com'">No, I am under 20</button>
+  </div>
+  <p class="gate-legal">This site is a non-transactional informational archive for an offline, licensed lounge. No e-commerce or online tobacco sales are conducted. <a href="./legal-terms-of-service.html" style="color:var(--ash);text-decoration:underline">Terms of Service</a> &nbsp;&middot;&nbsp; <a href="./legal-privacy-policy.html" style="color:var(--ash);text-decoration:underline">Privacy Policy</a></p>
+</div>
+
+<div class="cursor" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<!-- MOBILE MENU -->
+<nav class="mob-menu" id="mobMenu" aria-label="Mobile navigation">
+  <a href="./services.html" onclick="closeMob()">Services</a>
+  <a href="./lounge.html" onclick="closeMob()">The Lounge</a>
+  <a href="./about.html" onclick="closeMob()">About</a>
+  <a href="./education.html" onclick="closeMob()">Education</a>
+</nav>
+
+<!-- NAV -->
+<nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+  <a href="./" class="nav-logo" aria-label="CNX Cigars home">CNX Cigars</a>
+  <div class="nav-links">
+    <a href="./services.html">Services</a>
+    <a href="./lounge.html">The Lounge</a>
+    <a href="./about.html">About</a>
+    <a href="./education.html" aria-current="page">Education</a>
+  </div>
+  <a href="./services.html#reserve" class="nav-cta">Reserve a Seat</a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="pg-hero">
+  <div class="wrap">
+    <div class="pg-hero-inner">
+      <div class="pg-hero-img r-img">
+        <img src="./images/cnxcigars-cnx-cigars-amir-portrait-humidor-holding-cigar.webp" alt="Amir Nadimi examining a cigar in the CNX Cigars humidor" width="720" height="960">
+        <div class="pg-hero-badge">
+          <div class="f-badge-label">The Codex</div>
+          <p>Curator Examination Standard</p>
+        </div>
+      </div>
+      <div class="pg-hero-text">
+        <p class="t-label r" style="margin-bottom:1.5rem">A living organism, not a product</p>
+        <h1 class="r d1">The Somatic<br>Ritual of the Leaf</h1>
+        <blockquote class="r d2">"A cigar is not manufactured. It is grown, fermented, aged, and finally, surrendered to fire. To understand it fully is to understand a small, complete ecosystem, from the nitrate content of a Cuban field to the exact angle of a flame against a foot of tobacco."</blockquote>
+        <p class="t-body-lg r d3">Tobacco is an organic, hygroscopic, chemically active material that continues to live, breathe, and evolve from the moment it is harvested until the final ash falls. It is not consumed so much as it is communed with. What follows is the complete technical and historical education given to every curator on the CNX Cigars lounge floor — the same body of knowledge each must master to a strict 80%+ standard before they are permitted to guide a single guest, whether that guest is lighting their first stick or their five-thousandth.</p>
+        <div class="btn-grp r d4" style="margin-top:2.5rem">
+          <a href="./services.html#reserve" class="btn-gold">Reserve a Seat</a>
+          <a href="./founder.html" class="btn-outline">Meet the Founder</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHAPTER I: GENESIS OF TERROIR & HISTORY -->
+<section class="bio-section">
+  <div class="wrap">
+    <div class="bio-grid">
+      <div class="bio-label">
+        <span class="chapter-num r">Chapter I</span>
+        <p class="t-label r" style="margin-bottom:1rem">Origins</p>
+        <h2 class="r d1">The Genesis of<br>Terroir &amp; History</h2>
+      </div>
+      <div class="bio-body">
+        <p class="r d2">Long before tobacco became the province of connoisseurship, it was ceremony. The Maya of the Yucatán peninsula referred to the rolled, dried leaf they smoked as "sik'ar", a term that, filtered through centuries of Spanish colonial contact, eventually gave the modern world its word: cigar. To the Maya, tobacco was not recreational. It was liturgical, employed by shamans and healers in rituals meant to commune with the divine, to mark rites of passage, and to negotiate peace between warring factions. Smoke, in this original context, was a vehicle for the sacred, a physical bridge between the terrestrial and the unseen.</p>
+        <p class="r d3">When Columbus's expedition first encountered tobacco in Cuba in 1492, the leaf began its long migration into European aristocratic life. By the sixteenth century, tobacco cultivation was firmly established across the Caribbean basin, and by the eighteenth and nineteenth centuries, the Spanish Crown had transformed Cuban tobacco into a state-controlled luxury commodity, jealously guarded and fiercely taxed. The cigar evolved from ritual object to symbol of refinement, aristocracy, and worldly sophistication, a trajectory that continues to define the category today.</p>
+        <p class="r d3">To understand a cigar's character, however, is to understand terroir, the total environmental signature a growing region imprints upon its leaf. Terroir is not a marketing abstraction. It is a measurable interaction between soil composition, mineral content, rainfall patterns, humidity, elevation, and sun exposure, all of which alter the plant's cellular chemistry as it grows. In Cuba's Vuelta Abajo region, at the western tip of Pinar del Río province, the soil is a rare combination of sandy loam over a subsoil rich in potassium and low in nitrogen, a chemistry that produces exceptionally thin-veined, elastic, and aromatically complex wrapper leaf. The region's consistent humidity and filtered sunlight, moderated by the Sierra del Rosario mountain range, slow the leaf's growth cycle just enough to concentrate essential oils without coarsening the leaf structure.</p>
+        <p class="r d4">In Nicaragua, the volcanic valleys of Estelí and Jalapa tell an entirely different chemical story. Here, centuries of volcanic ash deposits have enriched the soil with elevated levels of potassium, phosphorus, and trace minerals, producing tobacco with a markedly heavier body, deeper earthiness, and a peppery spice that Cuban soil rarely yields. Estelí's lower elevation and intense heat produce a bolder, more robust ligero leaf, while Jalapa's higher altitude, cooler nights, and heavier cloud cover slow growth and produce a sweeter, more floral profile even from plants of the same seed genetics. Meanwhile, in the Dominican Republic's Yaque del Norte river valley (Yaque Valley), rich alluvial soil deposited by centuries of river flooding creates a milder, creamier, and more balanced leaf chemistry, prized for its smoothness and its role as the backbone of countless New World blends. In each region, soil nitrate levels directly govern combustion rate and burn temperature, while volcanic mineral content governs the intensity and character of the smoke's spice notes. This is terroir made tangible: not poetry, but agricultural chemistry expressed as flavor.</p>
+        <div class="bio-img r d4">
+          <img src="./images/cnxcigars-cnx-cigars-humidor-romeo-julieta-upmann-multi-shelf.webp" alt="CNX Cigars humidor showcasing tobacco from multiple growing regions" width="1200" height="675" loading="lazy">
+        </div>
+        <div class="competency-block r d4">
+          <div class="cb-label">Staff Competency Insight — Examination Matrix I</div>
+          <p>Every curator on the CNX Cigars lounge floor has been personally and rigorously examined by founder <strong>Amir Nadimi</strong> on the material above: the Mayan etymology of "sik'ar", the colonial trajectory of tobacco into European luxury culture, and the precise soil chemistry distinguishing Vuelta Abajo, Estelí, Jalapa, and the Yaque Valley. A curator is not permitted to speak with guests on the floor until this knowledge is thoroughly mastered. This is why our team can explain, fluently and without hesitation, in both <strong>Thai and English</strong>, why a Nicaraguan ligero tastes fundamentally different from a Cuban Vuelta Abajo wrapper grown less than two thousand miles away, and why that difference is written into the soil itself, not merely the brand on the band.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHAPTER II: THE ARCHITECTURE OF A VITOLA -->
+<section class="bio-section">
+  <div class="wrap">
+    <div class="bio-grid flip">
+      <div class="bio-body">
+        <div class="bio-img r">
+          <img src="./images/cnxcigars-cnx-cigars-humidor-shelves.webp" alt="Rows of hand-rolled cigars showing wrapper construction detail" width="1200" height="675" loading="lazy">
+        </div>
+        <p class="r d1">A finished cigar is a three-part architecture, each element serving a distinct structural and sensory function. The wrapper, the outermost leaf, is chosen as much for its tensile elegance as its flavor contribution, since it is the wrapper's visual perfection, oil sheen, and vein tightness that a connoisseur first evaluates. Wrapper leaf is broadly divided into two categories by curing method: Capa de Sol (sun-grown wrapper), cultivated under direct sunlight, which produces a thicker, darker, more robust leaf with pronounced oils and a heavier flavor contribution, and Capa de Sombra (shade-grown wrapper), cultivated beneath cheesecloth canopies that filter sunlight, producing a thinner, more elastic, and more evenly veined leaf prized for delicate, silky texture and a milder, more nuanced flavor profile. The shade-grown method, pioneered extensively in Connecticut and later adopted in Ecuador, remains the gold standard for wrappers destined for milder, more refined blends.</p>
+        <p class="r d1" style="margin-top:1rem">Beneath the wrapper lies the binder, a structurally critical leaf whose job is almost entirely mechanical rather than aromatic. The binder must possess sufficient tensile strength and elasticity to hold the filler bundle in a tight, cylindrical shape without tearing, while remaining porous enough to permit even airflow. Binder leaf is typically sourced from the middle primings of the tobacco plant, where leaf structure balances strength against combustibility. A poorly selected binder, too brittle or too dense, is the single most common cause of construction failure, manifesting as tunneling, uneven burn, or a collapsed draw partway through a smoke.</p>
+        <p class="r d2">The filler is where a master blender's true artistry resides, typically a careful marriage of three distinct leaf types, each harvested from a different priming (vertical position) on the tobacco plant. Ligero, harvested from the uppermost leaves that receive the most direct sunlight, is thick, oily, and slow-burning, contributing the majority of a cigar's strength and body. Seco, harvested from the middle of the plant, is thinner and more aromatic, contributing the bulk of a blend's complex flavor notes without excessive strength. Volado, harvested from the lowest leaves closest to the soil, is thin, porous, and combusts rapidly and evenly, and its primary function is combustion regulation, ensuring the cigar burns at a consistent rate rather than smoldering out or burning too hot. A master blender combines these three components in carefully calibrated ratios, often across leaves from multiple growing regions, to achieve a target flavor profile, strength curve, and burn characteristic.</p>
+        <p class="r d3">The physical assembly of these components is executed by hand through one of two bunching methods. In the entubado (accordion-fold) method, individual filler leaves are rolled into small tubes and bundled together, creating natural air channels running the length of the cigar that promote a smooth, effortless draw and even combustion. In the older, faster book-folding method, filler leaves are simply folded over one another like the pages of a book, a technique that is quicker to execute but historically more prone to draw inconsistency, since it creates fewer uniform air channels. Ring gauge, the diameter of the finished cigar measured in 64ths of an inch, further governs smoke behavior: a wider ring gauge increases the volume of air moving across the burning leaf, which cools the smoke before it reaches the palate and allows more complex flavor layering to develop, while a narrower ring gauge concentrates smoke and heat, producing a more intense, immediate flavor delivery with less room for nuance to unfold.</p>
+        <div class="competency-block r d4">
+          <div class="cb-label">Staff Competency Insight — Examination Matrix II</div>
+          <p>CNX Cigars curators are examined in granular detail on the anatomy above, including the structural distinction between Capa de Sol and Capa de Sombra wrappers, the mechanical role of the binder leaf, the flavor and combustion functions of Ligero, Seco, and Volado filler, and the physics of entubado versus book-folded bunching. This precision is what allows our team to answer a guest's question, "why does this ring gauge taste different from that one, even from the same brand," with an exact, technically grounded answer rather than a guess, delivered with equal fluency in <strong>Thai and English</strong>.</p>
+        </div>
+      </div>
+      <div class="bio-label">
+        <span class="chapter-num r">Chapter II</span>
+        <p class="t-label r" style="margin-bottom:1rem">Construction</p>
+        <h2 class="r d1">The Architecture<br>of a Vitola</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PULL QUOTE -->
+<div class="pull-quote">
+  <div class="wrap">
+    <blockquote class="r">"A cigar stored incorrectly for even a single week can lose in an afternoon what the earth spent two years building. Humidity is not a comfort setting. It is life support."</blockquote>
+    <cite class="r d1">Amir Nadimi, Founder of CNX Cigars</cite>
+  </div>
+</div>
+
+<!-- CHAPTER III: MICRO-CLIMATE FLUID DYNAMICS & MATURATION -->
+<section class="bio-section">
+  <div class="wrap">
+    <div class="bio-grid">
+      <div class="bio-label">
+        <span class="chapter-num r">Chapter III</span>
+        <p class="t-label r" style="margin-bottom:1rem">Climate science</p>
+        <h2 class="r d1">Micro-Climate Fluid<br>Dynamics &amp;<br>Maturation</h2>
+      </div>
+      <div class="bio-body">
+        <p class="r d2">Tobacco leaf is hygroscopic, meaning it continuously absorbs and releases moisture in response to the surrounding air, behaving less like an inert material and more like a living sponge that never fully stops breathing. This property is the single governing fact behind all humidor science, and it is the reason the industry has converged on what is known as the 70/70 rule: a stable environment held at 70 degrees Fahrenheit and 70 percent relative humidity, the precise midpoint at which tobacco's natural oils remain suspended and mobile without the leaf swelling or drying past safe structural limits.</p>
+        <p class="r d3">The consequences of deviation are exact and chemically predictable. When relative humidity drops below approximately 62 percent, the tobacco leaf begins to lose bound water molecules from its cellular structure at an accelerating rate, and with that moisture loss, volatile essential oils, the compounds responsible for a cigar's aromatic complexity, begin to evaporate directly into the surrounding air. A cigar exposed to this condition for an extended period becomes dry, brittle, and prone to cracking along the wrapper seam, and critically, the flavor compounds lost to evaporation do not return; the aromatic degradation is permanent. The cigar may still be smoked, but it will taste flat, harsh, and one-dimensional, stripped of the layered complexity its blend was designed to deliver.</p>
+        <p class="r d3">The opposite extreme carries its own distinct hazards. When relative humidity spikes above roughly 74 percent, the tobacco's plant cells begin to absorb excess water and swell, a physical expansion that tightens the wrapper against the binder and filler, restricting airflow through the cigar and producing a difficult, plugged draw. Far more seriously, humidity above this threshold creates the precise thermal and moisture conditions required for the dormant eggs of the cigar beetle (Lasioderma serricorne) to hatch. Once active, these larvae bore microscopic tunnels through the filler and binder, and a single infested cigar left in an unmonitored humidor can compromise an entire collection within days. This is why CNX Cigars' humidor infrastructure relies on automated, industrial-grade humidification systems rather than passive humidification devices, since only continuous, actively regulated moisture control can hold a room reliably within the narrow safe band, day and night, across Northern Thailand's own fluctuating tropical climate.</p>
+        <p class="r d4">Long-term aging, conducted correctly within this stable band, is where a cigar's most sophisticated character is built. Freshly cured tobacco carries harsh, astringent tannins and ammonia compounds, byproducts of the fermentation process used to convert raw leaf into smokeable tobacco. Over months and years of controlled aging at stable humidity, these compounds undergo slow, continuous enzymatic and oxidative breakdown, converting harsh tannic acids into smoother, more complex polyphenols and simple sugars. This is the same broad chemical family of reactions responsible for the mellowing of tannic red wine or the smoothing of raw whiskey in a barrel: time, held within a narrow and stable environmental window, transforms chemical harshness into layered sweetness, and a cigar aged five years in perfect conditions will taste measurably smoother, sweeter, and more integrated than the same blend smoked fresh off the rolling table.</p>
+        <div class="bio-img r d4">
+          <img src="./images/cnxcigars-cnx-cigars-humidor-wall-display.webp" alt="CNX Cigars climate-controlled humidor wall display" width="1200" height="675" loading="lazy">
+        </div>
+        <div class="competency-block r d4">
+          <div class="cb-label">Staff Competency Insight — Examination Matrix III</div>
+          <p>The 70/70 rule, the precise chemical consequences of humidity dropping below 62% or spiking past 74%, the biology of Lasioderma serricorne, and the enzymatic sugar-conversion process behind long-term cigar aging are all core sections of Amir's written curator examination. This is not academic trivia for our floor staff. It is the exact knowledge that protects every vitola in our humidor and allows our curators to answer, with full technical confidence in both <strong>Thai and English</strong>, precisely why a five-year-aged Cuban tastes fundamentally smoother than one aged five months.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHAPTER IV: THE SOMATIC RITUAL OF ENJOYMENT -->
+<section class="bio-section">
+  <div class="wrap">
+    <div class="bio-grid flip">
+      <div class="bio-body">
+        <p class="r">The enjoyment of a fine cigar is a disciplined, four-stage ritual, and each stage carries specific technical requirements that separate a properly executed smoke from a wasted one. Rushing, or skipping any stage, does not merely diminish the experience; it can permanently damage the cigar before it is ever lit.</p>
+        <div class="philosophy-item r d1">
+          <div class="ph-heading">I. The Precision Cut</div>
+          <p>Every cigar cap is constructed from a small circular patch of wrapper leaf glued over the head to prevent the bunched filler beneath from unraveling. The objective of cutting is to remove just enough of this cap to open a clean draw channel, without cutting so deep that the cut passes below the shoulder, the point where the rounded cap meets the cylindrical body of the cigar. A cut made below the shoulder severs the structural integrity of the wrapper's spiral wrap, and the cigar will begin to unravel from that point outward with every draw, destroying the smoking experience within minutes. A guillotine cutter should sever the cap in a single, decisive motion; a hesitant, sawing motion tears rather than slices the leaf, creating a ragged edge that similarly invites unraveling.</p>
+        </div>
+        <div class="philosophy-item r d2">
+          <div class="ph-heading">II. The Dry Draw</div>
+          <p>Before any flame is introduced, a proper cigar is drawn on once or twice, unlit, purely to assess baseline airflow resistance. A correctly constructed cigar offers a firm but yielding resistance, comparable to drawing air gently through a straw. Excessive resistance signals an overly tight roll or a plugged section of filler, while an almost effortless draw signals a loosely bunched cigar that will burn too hot and too fast. This dry draw also delivers the cigar's cold flavor notes, the taste of the tobacco leaf itself before combustion introduces heat and smoke, often revealing base notes of cedar, hay, or dried fruit that inform what to expect once lit.</p>
+        </div>
+        <div class="philosophy-item r d3">
+          <div class="ph-heading">III. Toasting the Foot</div>
+          <p>Ignition begins not with direct flame-to-tobacco contact, but with toasting: holding the foot of the cigar just above a flame source and rotating it slowly to gently char the very outer layer of the wrapper. CNX Cigars uses only clean-burning butane torches or natural cedar spills for this stage, never petroleum-based lighter fluid, since sulfur and other combustion byproducts from cheap fuels are absorbed into the porous tobacco and permanently taint the flavor of the entire smoke. The foot should be held at a consistent 45-degree angle to the flame while rotating, a technique that produces an even, complete peripheral ring of ignition around the entire circumference before the first true draw is taken. An uneven toast produces an uneven burn line for the remainder of the smoke, a cosmetic and functional flaw known in the trade as canoeing.</p>
+        </div>
+        <div class="philosophy-item r d4">
+          <div class="ph-heading">IV. Ignition &amp; The Palate</div>
+          <p>Once evenly toasted, the cigar is drawn to ignite the foot fully, and true enjoyment begins. Unlike cigarette smoke, premium cigar smoke is never inhaled into the lungs; the flavor compounds are instead absorbed through the moist mucous membranes lining the mouth, throat, and nasal cavity, a gentler and more sustainable method of consumption that also happens to be where the true complexity of a fine cigar is best perceived. The most technically advanced method of flavor perception is retrohaling: after drawing smoke into the mouth, a small volume is gently exhaled backward through the nasal passage rather than forward through the lips. This routes the smoke directly across the olfactory receptors at the roof of the nasal cavity, the same receptors responsible for the overwhelming majority of what the brain interprets as flavor, and it is retrohaling specifically that unlocks the top-note complexity of leather, black pepper spice, and damp earth that a simple mouth-only draw will never fully reveal.</p>
+        </div>
+        <div class="competency-block r d5">
+          <div class="cb-label">Staff Competency Insight — Examination Matrix IV</div>
+          <p>The complete four-stage ritual above, the exact mechanics of the shoulder cut, the diagnostic purpose of the dry draw, the chemistry of clean-fuel toasting at a 45-degree angle, and the science of mucous membrane absorption versus retrohaling, forms the practical core of Amir's curator examination. No CNX Cigars team member is permitted to guide a guest through their first cigar, or their five-thousandth, without a thorough command of this exact material. It is why our curators can physically demonstrate correct cutting and toasting technique, and explain the science behind each motion, fluently and patiently, in both <strong>Thai and English</strong>, to any guest who asks.</p>
+        </div>
+      </div>
+      <div class="bio-label">
+        <span class="chapter-num r">Chapter IV</span>
+        <p class="t-label r" style="margin-bottom:1rem">Ritual</p>
+        <h2 class="r d1">The Somatic Ritual<br>of Enjoyment</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING CTA -->
+<section class="bio-cta">
+  <div class="wrap">
+    <p class="t-label r" style="margin-bottom:1.5rem;display:block">Knowledge, applied</p>
+    <h2 class="r d1">Every curator on our floor<br>has passed this exact codex.<br>Come put it to the test.</h2>
+    <p class="r d2">Whether you want to go deeper into terroir, learn to retrohale properly, or simply sit down with a Robusto and ask questions, our team is trained to meet you exactly where you are, in Thai or English.</p>
+    <div class="btn-grp r d3" style="justify-content:center">
+      <a href="./services.html#reserve" class="btn-gold">Reserve a Seat</a>
+      <a href="./founder.html" class="btn-outline">Meet the Founder</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <div class="brand-mark">CNX Cigars</div>
+        <div class="brand-tag">International Cigar Bar &amp; Lounge</div>
+        <p>Cigars Chiang Mai Co., Ltd<br>2nd Floor, 45 Nimmana Haeminda Rd Lane 11<br>Chiang Mai 50200, Thailand</p>
+        <p style="margin-top:1rem"><a href="#" id="ftr-wa" style="color:inherit">WhatsApp</a><br><a href="#" id="ftr-line" style="color:inherit">LINE</a><br>cigarschiangmai@gmail.com</p>
+      </div>
+      <div class="ft-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="./lounge.html">The Lounge</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./services.html">Services &amp; Contact</a></li>
+          <li><a href="./education.html">Education</a></li>
+        </ul>
+      </div>
+      <div class="ft-col" style="margin-left:-100px">
+        <h4>The Lounge</h4>
+        <ul>
+          <li><a href="./lounge.html">Experience</a></li>
+          <li><a href="./services.html#reserve">B2B &amp; HORECA</a></li>
+          <li><a href="./services.html#reserve">Reserve a Seat</a></li>
+        </ul>
+      </div>
+      <div class="ft-logo" aria-hidden="true">
+        <img src="./images/cnxcigars-cnx-cigars-logo-circle.webp" alt="" width="150" height="150" loading="lazy">
+      </div>
+    </div>
+    <p class="ft-legal">Online sale of tobacco is strictly prohibited in the Kingdom of Thailand including sales to persons under 20 years.</p>
+    <div class="ft-bottom">
+      <p>&copy; 2026 Cigars Chiang Mai Co., Ltd. All rights reserved.</p>
+      <div class="ft-links">
+        <a href="./legal-privacy-policy.html">Privacy</a>
+        <a href="./legal-terms-of-service.html">Terms</a>
+        <a href="./legal-photo-disclaimer.html">Photo Disclaimer</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// AGE GATE
+(function(){if(localStorage.getItem('cnx_age_verified')==='1'){document.getElementById('gate').style.display='none';}})();
+function enterSite(){localStorage.setItem('cnx_age_verified','1');const g=document.getElementById('gate');g.classList.add('out');setTimeout(()=>g.style.display='none',700);}
+
+// NAV
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('dim',window.scrollY>60),{passive:true});
+
+// BURGER
+const burger=document.getElementById('burger'),mob=document.getElementById('mobMenu');
+burger.addEventListener('click',()=>{const o=mob.classList.toggle('open');burger.classList.toggle('open',o);burger.setAttribute('aria-expanded',o);});
+function closeMob(){mob.classList.remove('open');burger.classList.remove('open');burger.setAttribute('aria-expanded','false');document.querySelectorAll('.mob-sub,.mob-sub-2').forEach(function(e){e.classList.remove('open')});document.querySelectorAll('.mob-group-btn').forEach(function(e){e.classList.remove('active')})}
+function toggleMobGroup(btn){var sub=btn.nextElementSibling;var isOpen=sub.classList.contains('open');var isSub=btn.classList.contains('mob-sub-btn');var par=btn.closest(isSub?'.mob-sub':'.mob-menu');par.querySelectorAll(isSub?'.mob-sub-2':'.mob-sub').forEach(function(e){e.classList.remove('open')});par.querySelectorAll(isSub?'.mob-sub-btn':'.mob-group-btn:not(.mob-sub-btn)').forEach(function(e){e.classList.remove('active')});if(!isOpen){sub.classList.add('open');btn.classList.add('active')}}
+
+// REVEAL
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}});},{threshold:.12});
+document.querySelectorAll('.r,.r-img').forEach(el=>obs.observe(el));
+
+// DOT CURSOR
+(function(){
+  if(window.matchMedia('(pointer:coarse)').matches)return;
+  const dot=document.querySelector('.cursor'),ring=document.querySelector('.cursor-ring');
+  if(!dot||!ring)return;
+  let mx=window.innerWidth/2,my=window.innerHeight/2,rx=mx,ry=my;
+  function isDark(el){const bg=window.getComputedStyle(el).backgroundColor;const m=bg.match(/\d+/g);if(!m||m.length<3)return true;return(parseInt(m[0])*299+parseInt(m[1])*587+parseInt(m[2])*114)/1000<128;}
+  function updateTheme(){const el=document.elementFromPoint(mx,my);if(!el)return;const dark=isDark(el);dot.classList.toggle('light',!dark);ring.classList.toggle('light',!dark);}
+  document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.transform='translate('+mx+'px,'+my+'px) translate(-50%,-50%)';},{passive:true});
+  (function loop(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.transform='translate('+rx+'px,'+ry+'px) translate(-50%,-50%)';requestAnimationFrame(loop);})();
+  setInterval(updateTheme,300);
+})();
+</script>
+<script src="./scripts/chaty-widget.js?v=4" defer></script>
+<script>(function(){var wa=atob('aHR0cHM6Ly93YS5tZS82NjYyMjc2OTkzNw==');var ln=atob('aHR0cHM6Ly9saW5lLm1lL3RpL3AvQm9kYXpleQ==');var ew=document.getElementById('ftr-wa');var el=document.getElementById('ftr-line');if(ew)ew.addEventListener('click',function(e){e.preventDefault();window.open(wa,'_blank','noopener,noreferrer');});if(el)el.addEventListener('click',function(e){e.preventDefault();window.open(ln,'_blank','noopener,noreferrer');});})();</script></body>
+</html>
