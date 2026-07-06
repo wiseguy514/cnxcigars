@@ -196,7 +196,7 @@ burger.addEventListener('click',()=>{const o=mob.classList.toggle('open');burger
 function closeMob(){mob.classList.remove('open');burger.classList.remove('open');burger.setAttribute('aria-expanded','false');document.querySelectorAll('.mob-sub,.mob-sub-2').forEach(function(e){e.classList.remove('open')});document.querySelectorAll('.mob-group-btn').forEach(function(e){e.classList.remove('active')})}
 function toggleMobGroup(btn){var sub=btn.nextElementSibling;var isOpen=sub.classList.contains('open');var isSub=btn.classList.contains('mob-sub-btn');var par=btn.closest(isSub?'.mob-sub':'.mob-menu');par.querySelectorAll(isSub?'.mob-sub-2':'.mob-sub').forEach(function(e){e.classList.remove('open')});par.querySelectorAll(isSub?'.mob-sub-btn':'.mob-group-btn:not(.mob-sub-btn)').forEach(function(e){e.classList.remove('active')});if(!isOpen){sub.classList.add('open');btn.classList.add('active')}}
 </script>
-<script src="/scripts/chaty-widget.js?v=4" defer></script>
+<script src="/scripts/chaty-widget.js?v=5" defer></script>
 <script>(function(){var wa=atob('aHR0cHM6Ly93YS5tZS82NjYyMjc2OTkzNw==');var ln=atob('aHR0cHM6Ly9saW5lLm1lL3RpL3AvQm9kYXpleQ==');var ew=document.getElementById('ftr-wa');var el=document.getElementById('ftr-line');if(ew)ew.addEventListener('click',function(e){e.preventDefault();window.open(wa,'_blank','noopener,noreferrer');});if(el)el.addEventListener('click',function(e){e.preventDefault();window.open(ln,'_blank','noopener,noreferrer');});})();</script><script src="/scripts/lang-switch.js" defer></script>
 </body>
 </html>

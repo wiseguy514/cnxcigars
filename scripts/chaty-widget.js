@@ -17,7 +17,7 @@
 
   var isMobile = window.innerWidth <= 768;
 
-  var CNX_LOGO_HTML = '<img src="./images/cnxcigars-cnx-cigars-logo-circle.webp" width="52" height="52" alt="" aria-hidden="true" style="width:52px;height:52px;display:block;pointer-events:none;">';
+  var CNX_LOGO_HTML = '<img src="/images/cnxcigars-cnx-cigars-logo-circle.webp" width="52" height="52" alt="" aria-hidden="true" style="width:52px;height:52px;display:block;pointer-events:none;">';
 
   var CHAT_ICON =
     '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">' +
