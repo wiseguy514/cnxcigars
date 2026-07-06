@@ -213,7 +213,7 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
   .ft-logo{display:none}
 }
 @media(max-width:768px){
-  .nav-links,.nav-cta{display:none}
+  .nav-links,.nav-cta,.nav .lang-switch-mount{display:none}
   .burger{display:flex}
   .ft-top{grid-template-columns:1fr}
   .brands-table td:first-child{white-space:normal}
@@ -266,6 +266,8 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
   <a href="./services.html" onclick="closeMob()">服务</a>
   <a href="./lounge.html" onclick="closeMob()">会所大厅</a>
   <a href="./about.html" onclick="closeMob()">关于我们</a>
+
+  <div class="lang-switch-mount" aria-label="Language"></div>
 </nav>
 
 <!-- NAV -->
@@ -277,7 +279,8 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
     <a href="./about.html" aria-current="page">关于我们</a>
   </div>
   <a href="./services.html#reserve" class="nav-cta">预订席位</a>
-  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+  <div class="lang-switch-mount" aria-label="Language"></div>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
 </nav>
@@ -300,7 +303,7 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
         <p class="t-body-lg r d3">泰国北部首屈一指的豪华雪茄会所、最高级别认证顾问及持牌权威经销商。</p>
         <div class="btn-grp r d4" style="margin-top:2.5rem">
           <a href="./services.html#reserve" class="btn-gold">预订席位</a>
-          <a href="/founder.html" class="btn-outline">认识创始人</a>
+          <a href="./founder.html" class="btn-outline">认识创始人</a>
         </div>
       </div>
     </div>
@@ -457,7 +460,7 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
         <p class="r d3">通过将数十年的国际传承与本地经营的精准度相融合，CNX Cigars始终是泰国北部无可争议的高端吸烟文化中心，坚定不移地维持奢华、教育与专业运营的标准。</p>
         <div class="btn-grp r d4" style="margin-top:2.5rem">
           <a href="./services.html#reserve" class="btn-gold">B2B咨询</a>
-          <a href="/founder.html" class="btn-outline">认识创始人</a>
+          <a href="./founder.html" class="btn-outline">认识创始人</a>
         </div>
       </div>
     </div>
@@ -472,7 +475,7 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
         <p class="t-label" style="display:block;margin-bottom:1rem">关于CNX Cigars</p>
         <h2>品牌相关问题</h2>
         <p>会所背后的故事、缔造它的人，以及这里与众不同的原因。</p>
-        <a href="/founder.html" class="btn-outline">认识创始人</a>
+        <a href="./founder.html" class="btn-outline">认识创始人</a>
       </div>
       <div class="faq-list r d1">
         <div class="faq-item">
@@ -524,7 +527,7 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
     <p class="r d2">为氛围而来，为交谈而留。</p>
     <div class="btn-grp r d3" style="justify-content:center">
       <a href="./services.html#reserve" class="btn-gold">预订席位</a>
-      <a href="/founder.html" class="btn-outline">认识创始人</a>
+      <a href="./founder.html" class="btn-outline">认识创始人</a>
     </div>
   </div>
 </section>
@@ -608,5 +611,6 @@ document.querySelectorAll('.faq-q').forEach(btn=>{btn.addEventListener('click',(
 })();
 </script>
 <script src="/scripts/chaty-widget.js?v=4" defer></script>
-<script>(function(){var wa=atob('aHR0cHM6Ly93YS5tZS82NjYyMjc2OTkzNw==');var ln=atob('aHR0cHM6Ly9saW5lLm1lL3RpL3AvQm9kYXpleQ==');var ew=document.getElementById('ftr-wa');var el=document.getElementById('ftr-line');if(ew)ew.addEventListener('click',function(e){e.preventDefault();window.open(wa,'_blank','noopener,noreferrer');});if(el)el.addEventListener('click',function(e){e.preventDefault();window.open(ln,'_blank','noopener,noreferrer');});})();</script></body>
+<script>(function(){var wa=atob('aHR0cHM6Ly93YS5tZS82NjYyMjc2OTkzNw==');var ln=atob('aHR0cHM6Ly9saW5lLm1lL3RpL3AvQm9kYXpleQ==');var ew=document.getElementById('ftr-wa');var el=document.getElementById('ftr-line');if(ew)ew.addEventListener('click',function(e){e.preventDefault();window.open(wa,'_blank','noopener,noreferrer');});if(el)el.addEventListener('click',function(e){e.preventDefault();window.open(ln,'_blank','noopener,noreferrer');});})();</script><script src="/scripts/lang-switch.js" defer></script>
+</body>
 </html>

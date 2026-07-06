@@ -107,7 +107,7 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
 
 @media(max-width:1100px){.ft-top{grid-template-columns:1fr 1fr}.ft-logo{display:none}}
 @media(max-width:768px){
-  .nav-links,.nav-cta{display:none}
+  .nav-links,.nav-cta,.nav .lang-switch-mount{display:none}
   .burger{display:flex}
   .ft-top{grid-template-columns:1fr}
 }
@@ -137,9 +137,11 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
 <div class="mob-menu" id="mobMenu" role="dialog" aria-label="Navigation">
   <a href="./" onclick="closeMob()">首页</a>
   <a href="./about.html" onclick="closeMob()">关于我们</a>
-  <a href="/founder.html" onclick="closeMob()">创始人</a>
+  <a href="./founder.html" onclick="closeMob()">创始人</a>
   <a href="./services.html" onclick="closeMob()">预订席位</a>
   <a href="./services.html#reserve" onclick="closeMob()">联系我们</a>
+
+  <div class="lang-switch-mount" aria-label="Language"></div>
 </div>
 
 <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
@@ -147,11 +149,12 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
   <div class="nav-links">
     <a href="./">首页</a>
     <a href="./about.html">关于我们</a>
-    <a href="/founder.html">创始人</a>
+    <a href="./founder.html">创始人</a>
     <a href="./services.html#reserve">联系我们</a>
   </div>
   <a href="./services.html#reserve" class="nav-cta">预订席位</a>
-  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+  <div class="lang-switch-mount" aria-label="Language"></div>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
 </nav>
@@ -271,5 +274,6 @@ function toggleMobGroup(btn){var sub=btn.nextElementSibling;var isOpen=sub.class
 })();
 </script>
 <script src="/scripts/chaty-widget.js?v=4" defer></script>
-<script>(function(){var wa=atob('aHR0cHM6Ly93YS5tZS82NjYyMjc2OTkzNw==');var ln=atob('aHR0cHM6Ly9saW5lLm1lL3RpL3AvQm9kYXpleQ==');var ew=document.getElementById('ftr-wa');var el=document.getElementById('ftr-line');if(ew)ew.addEventListener('click',function(e){e.preventDefault();window.open(wa,'_blank','noopener,noreferrer');});if(el)el.addEventListener('click',function(e){e.preventDefault();window.open(ln,'_blank','noopener,noreferrer');});})();</script></body>
+<script>(function(){var wa=atob('aHR0cHM6Ly93YS5tZS82NjYyMjc2OTkzNw==');var ln=atob('aHR0cHM6Ly9saW5lLm1lL3RpL3AvQm9kYXpleQ==');var ew=document.getElementById('ftr-wa');var el=document.getElementById('ftr-line');if(ew)ew.addEventListener('click',function(e){e.preventDefault();window.open(wa,'_blank','noopener,noreferrer');});if(el)el.addEventListener('click',function(e){e.preventDefault();window.open(ln,'_blank','noopener,noreferrer');});})();</script><script src="/scripts/lang-switch.js" defer></script>
+</body>
 </html>

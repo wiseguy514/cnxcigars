@@ -6,6 +6,10 @@
 <title>The Lounge | Cigar Lounge Chiang Mai | CNX Cigars</title>
 <meta name="description" content="A climate-stabilised cigar lounge in the heart of Nimman, Chiang Mai. An open floor for walk-ins, a private reserve for those who ask. CNX Cigars.">
 <link rel="canonical" href="https://cnxcigars.com/lounge.html">
+<link rel="alternate" hreflang="en" href="https://cnxcigars.com/lounge.html">
+<link rel="alternate" hreflang="th" href="https://cnxcigars.com/th/lounge.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://cnxcigars.com/zh/lounge.html">
+<link rel="alternate" hreflang="x-default" href="https://cnxcigars.com/lounge.html">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://cnxcigars.com/lounge.html">
 <meta property="og:title" content="The Lounge | Cigar Lounge Chiang Mai | CNX Cigars">
@@ -197,7 +201,7 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
   .ft-logo{display:none}
 }
 @media(max-width:768px){
-  .nav-links,.nav-cta{display:none}
+  .nav-links,.nav-cta,.nav .lang-switch-mount{display:none}
   .burger{display:flex}
   .ft-top{grid-template-columns:1fr}
 }
@@ -250,6 +254,8 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
   <a href="./lounge.html" onclick="closeMob()">The Lounge</a>
   <a href="./about.html" onclick="closeMob()">About</a>
   <a href="./education.html" onclick="closeMob()">Education</a>
+
+  <div class="lang-switch-mount" aria-label="Language"></div>
 </nav>
 
 <!-- NAV -->
@@ -262,7 +268,8 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
     <a href="./education.html">Education</a>
   </div>
   <a href="./services.html#reserve" class="nav-cta">Reserve a Seat</a>
-  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+  <div class="lang-switch-mount" aria-label="Language"></div>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
 </nav>
@@ -552,5 +559,6 @@ document.querySelectorAll('.faq-q').forEach(btn=>{btn.addEventListener('click',(
 })();
 </script>
 <script src="./scripts/chaty-widget.js?v=4" defer></script>
-<script>(function(){var wa=atob('aHR0cHM6Ly93YS5tZS82NjYyMjc2OTkzNw==');var ln=atob('aHR0cHM6Ly9saW5lLm1lL3RpL3AvQm9kYXpleQ==');var ew=document.getElementById('ftr-wa');var el=document.getElementById('ftr-line');if(ew)ew.addEventListener('click',function(e){e.preventDefault();window.open(wa,'_blank','noopener,noreferrer');});if(el)el.addEventListener('click',function(e){e.preventDefault();window.open(ln,'_blank','noopener,noreferrer');});})();</script></body>
+<script>(function(){var wa=atob('aHR0cHM6Ly93YS5tZS82NjYyMjc2OTkzNw==');var ln=atob('aHR0cHM6Ly9saW5lLm1lL3RpL3AvQm9kYXpleQ==');var ew=document.getElementById('ftr-wa');var el=document.getElementById('ftr-line');if(ew)ew.addEventListener('click',function(e){e.preventDefault();window.open(wa,'_blank','noopener,noreferrer');});if(el)el.addEventListener('click',function(e){e.preventDefault();window.open(ln,'_blank','noopener,noreferrer');});})();</script><script src="./scripts/lang-switch.js" defer></script>
+</body>
 </html>

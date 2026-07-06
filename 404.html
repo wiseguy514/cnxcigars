@@ -7,6 +7,10 @@
 <meta name="description" content="This page does not exist. Return to CNX Cigars, Northern Thailand's premier cigar lounge in Chiang Mai.">
 <meta name="robots" content="noindex">
 <link rel="canonical" href="https://cnxcigars.com/404.html">
+<link rel="alternate" hreflang="en" href="https://cnxcigars.com/404.html">
+<link rel="alternate" hreflang="th" href="https://cnxcigars.com/th/404.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://cnxcigars.com/zh/404.html">
+<link rel="alternate" hreflang="x-default" href="https://cnxcigars.com/404.html">
 <link rel="icon" type="image/x-icon" href="./favicon/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32.png">
 <link rel="apple-touch-icon" href="./favicon/apple-touch-icon.png">
@@ -82,6 +86,7 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
 @media(max-width:860px){
   .nav-links{display:none}
   .nav-cta{display:none}
+  .nav .lang-switch-mount{display:none}
   .burger{display:flex}
   .ft-top{grid-template-columns:1fr 1fr}
   .ft-brand{grid-column:1/-1}
@@ -115,6 +120,7 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
   <a href="./services.html" onclick="closeMob()">Services</a>
   <a href="./lounge.html" onclick="closeMob()">The Lounge</a>
   <a href="./about.html" onclick="closeMob()">About</a>
+  <div class="lang-switch-mount" aria-label="Language"></div>
 </div>
 
 <nav class="nav" id="nav" role="navigation">
@@ -125,7 +131,8 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
     <a href="./about.html">About</a>
   </div>
   <a href="./services.html#reserve" class="nav-cta">Reserve a Seat</a>
-  <button class="burger" id="burger" aria-expanded="false" aria-label="Toggle navigation">
+  <div class="lang-switch-mount" aria-label="Language"></div>
+    <button class="burger" id="burger" aria-expanded="false" aria-label="Toggle navigation">
     <span></span><span></span><span></span>
   </button>
 </nav>
@@ -190,5 +197,6 @@ function closeMob(){mob.classList.remove('open');burger.classList.remove('open')
 function toggleMobGroup(btn){var sub=btn.nextElementSibling;var isOpen=sub.classList.contains('open');var isSub=btn.classList.contains('mob-sub-btn');var par=btn.closest(isSub?'.mob-sub':'.mob-menu');par.querySelectorAll(isSub?'.mob-sub-2':'.mob-sub').forEach(function(e){e.classList.remove('open')});par.querySelectorAll(isSub?'.mob-sub-btn':'.mob-group-btn:not(.mob-sub-btn)').forEach(function(e){e.classList.remove('active')});if(!isOpen){sub.classList.add('open');btn.classList.add('active')}}
 </script>
 <script src="./scripts/chaty-widget.js?v=4" defer></script>
-<script>(function(){var wa=atob('aHR0cHM6Ly93YS5tZS82NjYyMjc2OTkzNw==');var ln=atob('aHR0cHM6Ly9saW5lLm1lL3RpL3AvQm9kYXpleQ==');var ew=document.getElementById('ftr-wa');var el=document.getElementById('ftr-line');if(ew)ew.addEventListener('click',function(e){e.preventDefault();window.open(wa,'_blank','noopener,noreferrer');});if(el)el.addEventListener('click',function(e){e.preventDefault();window.open(ln,'_blank','noopener,noreferrer');});})();</script></body>
+<script>(function(){var wa=atob('aHR0cHM6Ly93YS5tZS82NjYyMjc2OTkzNw==');var ln=atob('aHR0cHM6Ly9saW5lLm1lL3RpL3AvQm9kYXpleQ==');var ew=document.getElementById('ftr-wa');var el=document.getElementById('ftr-line');if(ew)ew.addEventListener('click',function(e){e.preventDefault();window.open(wa,'_blank','noopener,noreferrer');});if(el)el.addEventListener('click',function(e){e.preventDefault();window.open(ln,'_blank','noopener,noreferrer');});})();</script><script src="./scripts/lang-switch.js" defer></script>
+</body>
 </html>

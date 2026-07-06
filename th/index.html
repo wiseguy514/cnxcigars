@@ -404,7 +404,7 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:4.5rem
   .svc-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:768px){
-  .nav-links,.nav-cta{display:none}
+  .nav-links,.nav-cta,.nav .lang-switch-mount{display:none}
   .burger{display:flex}
   .about-body{flex-direction:column}
   .about-side{flex-direction:row;flex-wrap:wrap}
@@ -542,18 +542,21 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:4.5rem
   <a href="./services.html" onclick="closeMob()">บริการ</a>
   <a href="./lounge.html" onclick="closeMob()">เดอะเลานจ์</a>
   <a href="./about.html" onclick="closeMob()">เกี่ยวกับเรา</a>
+
+  <div class="lang-switch-mount" aria-label="Language"></div>
 </nav>
 
 <!-- NAV -->
 <header>
   <nav class="nav" id="mainNav">
-    <a class="nav-logo" href="https://cnxcigars.com/" style="font-size:.9rem;letter-spacing:.32em">CNX Cigars</a>
+    <a class="nav-logo" href="./" style="font-size:.9rem;letter-spacing:.32em">CNX Cigars</a>
     <div class="nav-links">
       <a href="./services.html">บริการ</a>
       <a href="./lounge.html">เดอะเลานจ์</a>
       <a href="./about.html">เกี่ยวกับเรา</a>
     </div>
     <a href="./services.html#reserve" class="nav-cta">จองที่นั่ง</a>
+    <div class="lang-switch-mount" aria-label="Language"></div>
     <button class="burger" id="burger" aria-label="Toggle menu" onclick="toggleMob()">
       <span></span><span></span><span></span>
     </button>
@@ -661,7 +664,7 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:4.5rem
     <div class="about-body wrap">
       <div class="about-head">
         <h2 class="r">สามสิบปี<br>แห่งควันหอมที่สมบูรณ์แบบ</h2>
-        <p class="t-body-lg r d2">ภายใต้การดูแลส่วนตัวของ <a href="/founder.html" style="color:var(--gold);text-decoration:underline;text-underline-offset:3px">อาเมียร์ นาดิมี</a> CNX Cigars ได้นำความเชี่ยวชาญด้านยาสูบตลอดสามสิบปีมาสู่ภาคเหนือของประเทศไทย ห้องเก็บซิการ์ที่ไม่ธรรมดา คำแนะนำจากผู้ก่อตั้งโดยตรง และพื้นที่ที่ทุกคนได้รับการต้อนรับ</p>
+        <p class="t-body-lg r d2">ภายใต้การดูแลส่วนตัวของ <a href="./founder.html" style="color:var(--gold);text-decoration:underline;text-underline-offset:3px">อาเมียร์ นาดิมี</a> CNX Cigars ได้นำความเชี่ยวชาญด้านยาสูบตลอดสามสิบปีมาสู่ภาคเหนือของประเทศไทย ห้องเก็บซิการ์ที่ไม่ธรรมดา คำแนะนำจากผู้ก่อตั้งโดยตรง และพื้นที่ที่ทุกคนได้รับการต้อนรับ</p>
       </div>
       <div class="about-side">
         <a class="aside-card r d3" href="./services.html#reserve">
@@ -940,7 +943,7 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:4.5rem
         <p class="t-body r d3" style="margin-top:1rem">อาเมียร์เดินทางมาถึงเชียงใหม่ในปี 2565 และพบสิ่งที่หลายคนมองข้าม นั่นคือยังไม่มีพื้นที่เฉพาะสำหรับวัฒนธรรมซิการ์ในภาคเหนือของไทย เขาเริ่มจัดกิจกรรมพบปะ สร้างชุมชนขึ้นมาจากศูนย์ ในเดือนพฤษภาคม 2567 CNX Cigars เปิดประตูต้อนรับบนถนนนิมมานเหมินทร์ และกลายเป็นเลานจ์ซิการ์นานาชาติชั้นนำของภูมิภาค</p>
         <div class="btn-grp r d4" style="margin-top:2.5rem">
           <a href="./services.html#reserve" class="btn-gold">มาเยือนเลานจ์</a>
-          <a href="/founder.html" class="btn-outline">ประวัติฉบับเต็ม</a>
+          <a href="./founder.html" class="btn-outline">ประวัติฉบับเต็ม</a>
         </div>
       </div>
     </div>
@@ -1429,5 +1432,6 @@ function handleNL(e){
 })();
 </script>
 <script src="/scripts/chaty-widget.js?v=4" defer></script>
+<script src="/scripts/lang-switch.js" defer></script>
 </body>
 </html>

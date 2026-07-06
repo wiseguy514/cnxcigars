@@ -404,7 +404,7 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:4.5rem
   .svc-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:768px){
-  .nav-links,.nav-cta{display:none}
+  .nav-links,.nav-cta,.nav .lang-switch-mount{display:none}
   .burger{display:flex}
   .about-body{flex-direction:column}
   .about-side{flex-direction:row;flex-wrap:wrap}
@@ -543,6 +543,8 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:4.5rem
   <a href="./lounge.html" onclick="closeMob()">The Lounge</a>
   <a href="./about.html" onclick="closeMob()">About</a>
   <a href="./education.html" onclick="closeMob()">Education</a>
+
+  <div class="lang-switch-mount" aria-label="Language"></div>
 </nav>
 
 <!-- NAV -->
@@ -556,6 +558,7 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:4.5rem
       <a href="./education.html">Education</a>
     </div>
     <a href="./services.html#reserve" class="nav-cta">Reserve a Seat</a>
+    <div class="lang-switch-mount" aria-label="Language"></div>
     <button class="burger" id="burger" aria-label="Toggle menu" onclick="toggleMob()">
       <span></span><span></span><span></span>
     </button>
@@ -1432,5 +1435,6 @@ function handleNL(e){
 })();
 </script>
 <script src="./scripts/chaty-widget.js?v=4" defer></script>
+<script src="./scripts/lang-switch.js" defer></script>
 </body>
 </html>

@@ -213,7 +213,7 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
   .ft-logo{display:none}
 }
 @media(max-width:768px){
-  .nav-links,.nav-cta{display:none}
+  .nav-links,.nav-cta,.nav .lang-switch-mount{display:none}
   .burger{display:flex}
   .ft-top{grid-template-columns:1fr}
   .brands-table td:first-child{white-space:normal}
@@ -266,6 +266,8 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
   <a href="./services.html" onclick="closeMob()">บริการ</a>
   <a href="./lounge.html" onclick="closeMob()">เดอะเลานจ์</a>
   <a href="./about.html" onclick="closeMob()">เกี่ยวกับเรา</a>
+
+  <div class="lang-switch-mount" aria-label="Language"></div>
 </nav>
 
 <!-- NAV -->
@@ -277,7 +279,8 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
     <a href="./about.html" aria-current="page">เกี่ยวกับเรา</a>
   </div>
   <a href="./services.html#reserve" class="nav-cta">จองที่นั่ง</a>
-  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+  <div class="lang-switch-mount" aria-label="Language"></div>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
 </nav>
@@ -300,7 +303,7 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
         <p class="t-body-lg r d3">เลานจ์ซิการ์หรูชั้นนำ ที่ปรึกษาที่ได้รับการรับรองระดับสูงสุด และผู้มีอำนาจจัดจำหน่ายที่ได้รับใบอนุญาตของภาคเหนือประเทศไทย</p>
         <div class="btn-grp r d4" style="margin-top:2.5rem">
           <a href="./services.html#reserve" class="btn-gold">จองที่นั่ง</a>
-          <a href="/founder.html" class="btn-outline">พบกับผู้ก่อตั้ง</a>
+          <a href="./founder.html" class="btn-outline">พบกับผู้ก่อตั้ง</a>
         </div>
       </div>
     </div>
@@ -457,7 +460,7 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
         <p class="r d3">ด้วยการผสมผสานมรดกระดับนานาชาติหลายทศวรรษเข้ากับความแม่นยำในการดำเนินงานระดับท้องถิ่น CNX Cigars ยังคงเป็นศูนย์กลางของวัฒนธรรมการสูบบุหรี่ระดับพรีเมียมในภาคเหนือของไทยอย่างไม่มีข้อโต้แย้ง โดยรักษามาตรฐานความหรูหรา การให้ความรู้ และการดำเนินงานอย่างมืออาชีพอย่างเด็ดขาด</p>
         <div class="btn-grp r d4" style="margin-top:2.5rem">
           <a href="./services.html#reserve" class="btn-gold">สอบถาม B2B</a>
-          <a href="/founder.html" class="btn-outline">พบกับผู้ก่อตั้ง</a>
+          <a href="./founder.html" class="btn-outline">พบกับผู้ก่อตั้ง</a>
         </div>
       </div>
     </div>
@@ -472,7 +475,7 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
         <p class="t-label" style="display:block;margin-bottom:1rem">เกี่ยวกับ CNX Cigars</p>
         <h2>คำถามเกี่ยวกับแบรนด์</h2>
         <p>เรื่องราวเบื้องหลังเลานจ์ ผู้คนที่สร้างมันขึ้นมา และสิ่งที่ทำให้ที่นี่แตกต่าง</p>
-        <a href="/founder.html" class="btn-outline">พบกับผู้ก่อตั้ง</a>
+        <a href="./founder.html" class="btn-outline">พบกับผู้ก่อตั้ง</a>
       </div>
       <div class="faq-list r d1">
         <div class="faq-item">
@@ -524,7 +527,7 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
     <p class="r d2">มาเพื่อบรรยากาศ อยู่ต่อเพื่อการสนทนา</p>
     <div class="btn-grp r d3" style="justify-content:center">
       <a href="./services.html#reserve" class="btn-gold">จองที่นั่ง</a>
-      <a href="/founder.html" class="btn-outline">พบกับผู้ก่อตั้ง</a>
+      <a href="./founder.html" class="btn-outline">พบกับผู้ก่อตั้ง</a>
     </div>
   </div>
 </section>
@@ -608,5 +611,6 @@ document.querySelectorAll('.faq-q').forEach(btn=>{btn.addEventListener('click',(
 })();
 </script>
 <script src="/scripts/chaty-widget.js?v=4" defer></script>
-<script>(function(){var wa=atob('aHR0cHM6Ly93YS5tZS82NjYyMjc2OTkzNw==');var ln=atob('aHR0cHM6Ly9saW5lLm1lL3RpL3AvQm9kYXpleQ==');var ew=document.getElementById('ftr-wa');var el=document.getElementById('ftr-line');if(ew)ew.addEventListener('click',function(e){e.preventDefault();window.open(wa,'_blank','noopener,noreferrer');});if(el)el.addEventListener('click',function(e){e.preventDefault();window.open(ln,'_blank','noopener,noreferrer');});})();</script></body>
+<script>(function(){var wa=atob('aHR0cHM6Ly93YS5tZS82NjYyMjc2OTkzNw==');var ln=atob('aHR0cHM6Ly9saW5lLm1lL3RpL3AvQm9kYXpleQ==');var ew=document.getElementById('ftr-wa');var el=document.getElementById('ftr-line');if(ew)ew.addEventListener('click',function(e){e.preventDefault();window.open(wa,'_blank','noopener,noreferrer');});if(el)el.addEventListener('click',function(e){e.preventDefault();window.open(ln,'_blank','noopener,noreferrer');});})();</script><script src="/scripts/lang-switch.js" defer></script>
+</body>
 </html>

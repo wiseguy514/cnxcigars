@@ -117,7 +117,7 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
 }
 
 @media(max-width:768px){
-  .nav-links,.nav-cta{display:none}
+  .nav-links,.nav-cta,.nav .lang-switch-mount{display:none}
   .burger{display:flex}
   .ft-top{grid-template-columns:1fr}
 }
@@ -151,9 +151,11 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
 <div class="mob-menu" id="mobMenu" role="dialog" aria-label="Navigation">
   <a href="./" onclick="closeMob()">หน้าแรก</a>
   <a href="./about.html" onclick="closeMob()">เกี่ยวกับเรา</a>
-  <a href="/founder.html" onclick="closeMob()">ผู้ก่อตั้ง</a>
-  <a href="/services.html" onclick="closeMob()">จอง</a>
-  <a href="/services.html#reserve" onclick="closeMob()">ติดต่อ</a>
+  <a href="./founder.html" onclick="closeMob()">ผู้ก่อตั้ง</a>
+  <a href="./services.html" onclick="closeMob()">จอง</a>
+  <a href="./services.html#reserve" onclick="closeMob()">ติดต่อ</a>
+
+  <div class="lang-switch-mount" aria-label="Language"></div>
 </div>
 
 <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
@@ -161,11 +163,12 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
   <div class="nav-links">
     <a href="./">หน้าแรก</a>
     <a href="./about.html">เกี่ยวกับเรา</a>
-    <a href="/founder.html">ผู้ก่อตั้ง</a>
-    <a href="/services.html#reserve">ติดต่อ</a>
+    <a href="./founder.html">ผู้ก่อตั้ง</a>
+    <a href="./services.html#reserve">ติดต่อ</a>
   </div>
-  <a href="/services.html#reserve" class="nav-cta">จองที่นั่ง</a>
-  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+  <a href="./services.html#reserve" class="nav-cta">จองที่นั่ง</a>
+  <div class="lang-switch-mount" aria-label="Language"></div>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
 </nav>
@@ -256,17 +259,17 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
         <h4>สำรวจ</h4>
         <ul>
           <li><a href="./">หน้าแรก</a></li>
-          <li><a href="/lounge.html">เดอะเลานจ์</a></li>
+          <li><a href="./lounge.html">เดอะเลานจ์</a></li>
           <li><a href="./about.html">เกี่ยวกับเรา</a></li>
-          <li><a href="/services.html">บริการและติดต่อ</a></li>
+          <li><a href="./services.html">บริการและติดต่อ</a></li>
         </ul>
       </div>
       <div class="ft-col" style="margin-left:-100px">
         <h4>เดอะเลานจ์</h4>
         <ul>
-          <li><a href="/lounge.html">ประสบการณ์</a></li>
-          <li><a href="/services.html#reserve">B2B และ HORECA</a></li>
-          <li><a href="/services.html#reserve">จองที่นั่ง</a></li>
+          <li><a href="./lounge.html">ประสบการณ์</a></li>
+          <li><a href="./services.html#reserve">B2B และ HORECA</a></li>
+          <li><a href="./services.html#reserve">จองที่นั่ง</a></li>
         </ul>
       </div>
       <div class="ft-logo" aria-hidden="true">
@@ -302,5 +305,6 @@ function toggleMobGroup(btn){var sub=btn.nextElementSibling;var isOpen=sub.class
 })();
 </script>
 <script src="/scripts/chaty-widget.js?v=4" defer></script>
-<script>(function(){var wa=atob('aHR0cHM6Ly93YS5tZS82NjYyMjc2OTkzNw==');var ln=atob('aHR0cHM6Ly9saW5lLm1lL3RpL3AvQm9kYXpleQ==');var ew=document.getElementById('ftr-wa');var el=document.getElementById('ftr-line');if(ew)ew.addEventListener('click',function(e){e.preventDefault();window.open(wa,'_blank','noopener,noreferrer');});if(el)el.addEventListener('click',function(e){e.preventDefault();window.open(ln,'_blank','noopener,noreferrer');});})();</script></body>
+<script>(function(){var wa=atob('aHR0cHM6Ly93YS5tZS82NjYyMjc2OTkzNw==');var ln=atob('aHR0cHM6Ly9saW5lLm1lL3RpL3AvQm9kYXpleQ==');var ew=document.getElementById('ftr-wa');var el=document.getElementById('ftr-line');if(ew)ew.addEventListener('click',function(e){e.preventDefault();window.open(wa,'_blank','noopener,noreferrer');});if(el)el.addEventListener('click',function(e){e.preventDefault();window.open(ln,'_blank','noopener,noreferrer');});})();</script><script src="/scripts/lang-switch.js" defer></script>
+</body>
 </html>
