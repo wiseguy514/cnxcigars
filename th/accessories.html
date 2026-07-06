@@ -78,9 +78,10 @@ body{font-family:var(--f-body);color:var(--cream);background:var(--ink)}
 
 /* NAV */
 .nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:1.5rem var(--g);transition:background .4s,backdrop-filter .4s,padding .3s}
+.nav-right{display:flex;align-items:center;gap:5mm}
 .nav.dim{background:rgba(8,8,8,.9);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);padding:1rem var(--g)}
 .nav-logo{font-family:var(--f-brand);font-size:1.1rem;color:var(--gold);letter-spacing:.5em}
-.nav-links{display:flex;gap:2rem;align-items:center}
+.nav-links{display:flex;gap:2rem;align-items:center;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}
 .nav-links a{font-size:.95rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(240,236,228,.6);transition:color .2s}
 .nav-links a:hover,.nav-links a[aria-current=page]{color:var(--gold)}
 .nav-cta{font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;padding:.55rem 1.4rem;border:1px solid rgba(212,175,55,.3);color:var(--gold);transition:background .2s,color .2s}
@@ -173,7 +174,7 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
 /* RESPONSIVE */
 @media(max-width:1100px){.ft-top{grid-template-columns:1fr 1fr}.ft-logo{display:none}}
 @media(max-width:768px){
-  .nav-links,.nav-cta,.nav .lang-switch-mount{display:none}
+  .nav-links,.nav-cta,.nav .lang-switch-mount,.nav-right{display:none}
   .burger{display:flex}
   .ft-top{grid-template-columns:1fr}
 }
@@ -240,8 +241,10 @@ html,body{overflow-x:hidden}
     <a href="./lounge.html">เดอะเลานจ์</a>
     <a href="./about.html">เกี่ยวกับเรา</a>
   </div>
-  <a href="./services.html#reserve" class="nav-cta">จองที่นั่ง</a>
-  <div class="lang-switch-mount" aria-label="Language"></div>
+  <div class="nav-right">
+      <a href="./services.html#reserve" class="nav-cta">จองที่นั่ง</a>
+      <div class="lang-switch-mount" aria-label="Language"></div>
+    </div>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
