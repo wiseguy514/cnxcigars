@@ -254,7 +254,7 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
 .ft-logo img{width:234px;height:234px}
 .ft-brand .brand-mark{font-family:var(--f-brand);font-size:1.1rem;letter-spacing:.44em;color:var(--gold);margin-bottom:.4rem}
 .ft-brand .brand-tag{font-size:.9rem;letter-spacing:.18em;text-transform:uppercase;color:#867E77;margin-bottom:1.2rem}
-.ft-brand p{font-size:1.07rem;color:#867E77;line-height:1.75}
+.ft-social{display:flex;gap:.75rem;margin-top:1.4rem;flex-wrap:wrap}.ft-social a{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,0.1);color:#6a6560;transition:color .2s,border-color .2s}.ft-social a:hover{color:var(--gold);border-color:rgba(212,175,55,0.3)}.ft-brand p{font-size:1.07rem;color:#867E77;line-height:1.75}
 .ft-col h4{font-size:.9rem;letter-spacing:.2em;text-transform:uppercase;color:#CECAC3;margin-bottom:1.2rem}
 .ft-col ul{display:flex;flex-direction:column;gap:.7rem}
 .ft-col a{font-size:1.07rem;color:#867E77;transition:color .2s}
@@ -677,7 +677,13 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:clamp(
         <div class="brand-mark">CNX Cigars</div>
         <div class="brand-tag">国际雪茄酒吧与会所</div>
         <p>Cigars Chiang Mai Co., Ltd<br>2nd Floor, 45 Nimmana Haeminda Rd Lane 11<br>Chiang Mai 50200, Thailand</p>
-        <p style="margin-top:1rem"><a href="#" id="ftr-wa" style="color:inherit">WhatsApp</a><br><a href="#" id="ftr-line" style="color:inherit">LINE</a><br>cigarschiangmai@gmail.com</p>
+        <div class="ft-social">
+          <a href="#" id="ft-wa" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 1.85.504 3.58 1.382 5.065L2 22l5.085-1.33A9.956 9.956 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm5.5 13.9c-.26.73-1.51 1.4-2.08 1.44-.57.05-1.1.25-3.71-.77-3.14-1.24-5.12-4.45-5.28-4.65-.15-.21-1.25-1.67-1.25-3.18 0-1.52.8-2.26 1.08-2.57.28-.31.61-.39.82-.39.2 0 .41.003.59.01.19.008.44-.07.69.53.26.62.88 2.15.96 2.31.07.15.13.34.026.54-.1.21-.16.34-.31.52-.15.18-.32.4-.46.54-.15.15-.31.32-.13.63.18.31.8 1.31 1.71 2.13 1.17 1.04 2.16 1.37 2.47 1.52.31.15.49.13.67-.08.18-.21.77-.9.97-1.21.2-.31.41-.26.69-.15.28.1 1.79.84 2.1 1 .31.15.51.23.59.36.08.13.08.74-.18 1.47z"/></svg></a>
+          <a href="#" id="ft-line" aria-label="LINE"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596a.618.618 0 01-.199.031c-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595a.645.645 0 01.199-.032c.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.346 0 .625.285.625.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg></a>
+          <a href="#" id="ft-fb" aria-label="Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047v-2.66c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.265h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg></a>
+          <a href="#" id="ft-msg" aria-label="Messenger"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.373 0 0 4.974 0 11.111c0 3.498 1.744 6.614 4.469 8.664V24l4.088-2.242c1.092.3 2.246.464 3.443.464 6.627 0 12-4.975 12-11.111S18.627 0 12 0zm1.191 14.963l-3.055-3.26-5.963 3.26 6.559-6.963 3.13 3.26 5.889-3.26-6.56 6.963z"/></svg></a>
+          <a href="#" id="ft-email" aria-label="Email"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        </div>
       </div>
       <div class="ft-col">
         <h4>探索</h4>
@@ -816,6 +822,6 @@ document.querySelectorAll('.faq-q').forEach(btn=>{btn.addEventListener('click',(
 })();
 </script>
 <script src="/scripts/chaty-widget.js?v=5" defer></script>
-<script>(function(){var wa=atob('aHR0cHM6Ly93YS5tZS82NjYyMjc2OTkzNw==');var ln=atob('aHR0cHM6Ly9saW5lLm1lL3RpL3AvQm9kYXpleQ==');var ew=document.getElementById('ftr-wa');var el=document.getElementById('ftr-line');if(ew)ew.addEventListener('click',function(e){e.preventDefault();window.open(wa,'_blank','noopener,noreferrer');});if(el)el.addEventListener('click',function(e){e.preventDefault();window.open(ln,'_blank','noopener,noreferrer');});})();</script><script src="/scripts/lang-switch.js" defer></script>
+<script>(function(){var wa=atob('aHR0cHM6Ly93YS5tZS82NjYyMjc2OTkzNw==');var ln=atob('aHR0cHM6Ly9saW5lLm1lL3RpL3AvQm9kYXpleQ==');var email=atob('bWFpbHRvOmluZm9AY254Y2lnYXJzLmNvbQ==');function setLink(id,url,blank){var el=document.getElementById(id);if(!el)return;el.href=url;if(blank){el.target='_blank';el.rel='noopener noreferrer';}}function setPopup(id,url){var el=document.getElementById(id);if(!el)return;el.addEventListener('click',function(e){e.preventDefault();window.open(url,'_blank','noopener,noreferrer');});}setPopup('ft-wa',wa);setPopup('ft-line',ln);setLink('ft-fb','https://www.facebook.com/cigarschiangmai',true);setLink('ft-msg','https://m.me/cigarschiangmai',true);setLink('ft-email',email,false);})();</script><script src="/scripts/lang-switch.js" defer></script>
 </body>
 </html>

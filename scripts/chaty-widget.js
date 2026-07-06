@@ -6,7 +6,7 @@
   var LINE_URL = atob('aHR0cHM6Ly9saW5lLm1lL3RpL3AvQm9kYXpleQ=='); // line.me/ti/p/Bodazey
   var FB_URL   = 'https://www.facebook.com/cigarschiangmai';
   var MSG_URL  = 'https://m.me/cigarschiangmai';
-  var EMAIL_URL = atob('bWFpbHRvOmNpZ2Fyc2NoaWFuZ21haUBnbWFpbC5jb20=');
+  var EMAIL_URL = atob('bWFpbHRvOmluZm9AY254Y2lnYXJzLmNvbQ==');
 
   var GOLD      = '#D4AF37';
   var LEFT      = 20;
