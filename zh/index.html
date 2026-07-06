@@ -1261,7 +1261,7 @@ function toggleMobGroup(btn){var sub=btn.nextElementSibling;var isOpen=sub.class
   let paused=false,down=false,sx=0,startOff=0,offset=0,loopWidth=0;
 
   // Append cloned cards for seamless loop
-  const origCards=[...track.querySelectorAll('a.col-card')];
+  const origCards=[...track.querySelectorAll('.col-card')];
   origCards.forEach(c=>{
     const cl=c.cloneNode(true);
     cl.setAttribute('aria-hidden','true');
@@ -1270,7 +1270,7 @@ function toggleMobGroup(btn){var sub=btn.nextElementSibling;var isOpen=sub.class
   });
 
   function gap(){return Math.round(parseFloat(getComputedStyle(track).gap)||19);}
-  function step(){const c=track.querySelector('a.col-card');return c?c.offsetWidth+gap():300;}
+  function step(){const c=track.querySelector('.col-card');return c?c.offsetWidth+gap():300;}
 
   function applyNow(){track.style.transition='none';track.style.transform='translateX('+offset+'px)';}
   function applySmooth(){track.style.transition='transform 0.5s cubic-bezier(.4,0,.2,1)';track.style.transform='translateX('+offset+'px)';}
