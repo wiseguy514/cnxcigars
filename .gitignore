@@ -51,3 +51,7 @@ fonts/*.otf
 # Large assets (optimize before committing)
 *.psd
 *.ai
+
+# Understand Anything data dir (local knowledge-graph cache)
+.ua/
+.understand-anything/
