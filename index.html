@@ -261,24 +261,24 @@ body{font-family:var(--f-body);color:var(--cream);background:var(--ink)}
 .hours-cta{display:flex;gap:1rem;flex-wrap:wrap}
 
 /* ADVANTAGES */
-.adv{background:var(--ink-2)}
-.adv-grid{display:grid;grid-template-columns:1fr 1fr}
-.adv-img-panel{position:sticky;top:0;height:100svh;overflow:hidden}
-.adv-img{position:absolute;inset:0;opacity:0;transition:opacity .75s var(--ease-circ)}
-.adv-img.active{opacity:1}
-.adv-img img{width:100%;height:100%;object-fit:cover}
-.adv-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,transparent 55%,var(--ink-2) 100%)}
-.adv-text{padding:clamp(5rem,8vw,8rem) clamp(2rem,4vw,4rem)}
-.adv-hdr{display:flex;align-items:center;gap:.8rem;margin-bottom:3rem}
-.adv-hdr .t-label{color:var(--ash)}
-.adv-line{flex:0 0 60px;height:1px;background:var(--border-hi)}
-.adv-item{padding:2.4rem 0;border-bottom:1px solid var(--border);transition:border-color .3s}
-.adv-item:last-child{border-bottom:none}
-.adv-item:hover{border-color:var(--gold-dim)}
-.adv-num{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ash);margin-bottom:.8rem}
-.adv-item h3{font-family:var(--f-display);font-size:clamp(1.7rem,2.6vw,2.5rem);font-weight:300;color:var(--cream);margin-bottom:.75rem;transition:color .3s}
-.adv-item:hover h3{color:var(--gold)}
-.adv-item p{font-size:.92rem;line-height:1.8;color:var(--ash);max-width:400px}
+.lng{background:var(--ink-2)}
+.lng-grid{display:grid;grid-template-columns:1fr 1fr}
+.lng-img-panel{position:sticky;top:0;height:100svh;overflow:hidden}
+.lng-img{position:absolute;inset:0;opacity:0;transition:opacity .75s var(--ease-circ)}
+.lng-img.active{opacity:1}
+.lng-img img{width:100%;height:100%;object-fit:cover}
+.lng-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,transparent 55%,var(--ink-2) 100%)}
+.lng-text{padding:clamp(5rem,8vw,8rem) clamp(2rem,4vw,4rem)}
+.lng-hdr{display:flex;align-items:center;gap:.8rem;margin-bottom:3rem}
+.lng-hdr .t-label{color:var(--ash)}
+.lng-line{flex:0 0 60px;height:1px;background:var(--border-hi)}
+.lng-item{padding:2.4rem 0;border-bottom:1px solid var(--border);transition:border-color .3s}
+.lng-item:last-child{border-bottom:none}
+.lng-item:hover{border-color:var(--gold-dim)}
+.lng-num{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ash);margin-bottom:.8rem}
+.lng-item h3{font-family:var(--f-display);font-size:clamp(1.7rem,2.6vw,2.5rem);font-weight:300;color:var(--cream);margin-bottom:.75rem;transition:color .3s}
+.lng-item:hover h3{color:var(--gold)}
+.lng-item p{font-size:.92rem;line-height:1.8;color:var(--ash);max-width:400px}
 
 /* HUMIDOR LIST */
 .humidor{background:var(--ink);padding:clamp(5rem,9vw,9rem) 0}
@@ -403,8 +403,8 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:4.5rem
   .svc-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:768px){
-  .adv-grid{grid-template-columns:1fr}
-  .adv-img-panel{display:none}
+  .lng-grid{grid-template-columns:1fr}
+  .lng-img-panel{display:none}
   .nav-links,.nav-cta,.nav .lang-switch-mount,.nav-right{display:none}
   .burger{display:flex}
   .about-body{flex-direction:column}
@@ -837,43 +837,43 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:4.5rem
 </section>
 
 <!-- ADVANTAGES -->
-<section class="adv" id="lounge">
-  <div class="adv-grid">
-    <div class="adv-img-panel" aria-hidden="true">
-      <div class="adv-img active" id="advImg0"><img src="./images/cnxcigars-cnx-cigars-humidor-my-father-davidoff-selection.webp" alt="My Father and Davidoff cigar selection in the CNX Cigars humidor" width="720" height="1080" loading="lazy"></div>
-      <div class="adv-img" id="advImg1"><img src="./images/cnxcigars-cnx-cigars-owner-with-cigar-box.webp" alt="CNX Cigars owner holding a premium cigar box" width="720" height="1080" loading="lazy"></div>
-      <div class="adv-img" id="advImg2"><img src="./images/cnxcigars-cnx-cigars-event-night-full-room-overhead-mezzanine.webp" alt="Overhead view of the CNX Cigars mezzanine during an event night" width="720" height="1080" loading="lazy"></div>
-      <div class="adv-img" id="advImg3"><img src="./images/cnxcigars-cnx-cigars-humidor-stocked-shelves.webp" alt="Stocked shelves inside the CNX Cigars humidor" width="720" height="1080" loading="lazy"></div>
-      <div class="adv-img" id="advImg4"><img src="./images/cnxcigars-cnx-cigars-lounge-teal-reserved-seating-nook.webp" alt="Teal reserved seating nook in the CNX Cigars lounge" width="720" height="1080" loading="lazy"></div>
+<section class="lng" id="lounge">
+  <div class="lng-grid">
+    <div class="lng-img-panel" aria-hidden="true">
+      <div class="lng-img active" id="lngImg0"><img src="./images/cnxcigars-cnx-cigars-humidor-my-father-davidoff-selection.webp" alt="My Father and Davidoff cigar selection in the CNX Cigars humidor" width="720" height="1080" loading="lazy"></div>
+      <div class="lng-img" id="lngImg1"><img src="./images/cnxcigars-cnx-cigars-owner-with-cigar-box.webp" alt="CNX Cigars owner holding a premium cigar box" width="720" height="1080" loading="lazy"></div>
+      <div class="lng-img" id="lngImg2"><img src="./images/cnxcigars-cnx-cigars-event-night-full-room-overhead-mezzanine.webp" alt="Overhead view of the CNX Cigars mezzanine during an event night" width="720" height="1080" loading="lazy"></div>
+      <div class="lng-img" id="lngImg3"><img src="./images/cnxcigars-cnx-cigars-humidor-stocked-shelves.webp" alt="Stocked shelves inside the CNX Cigars humidor" width="720" height="1080" loading="lazy"></div>
+      <div class="lng-img" id="lngImg4"><img src="./images/cnxcigars-cnx-cigars-lounge-teal-reserved-seating-nook.webp" alt="Teal reserved seating nook in the CNX Cigars lounge" width="720" height="1080" loading="lazy"></div>
     </div>
-    <div class="adv-text">
-      <div class="adv-hdr">
-        <span id="advNum" class="t-label">01</span>
-        <div class="adv-line"></div>
+    <div class="lng-text">
+      <div class="lng-hdr">
+        <span id="lngNum" class="t-label">01</span>
+        <div class="lng-line"></div>
         <span class="t-label" style="color:var(--ash)">05</span>
       </div>
-      <div class="adv-item" data-adv="0">
-        <div class="adv-num t-label">01</div>
+      <div class="lng-item" data-lng="0">
+        <div class="lng-num t-label">01</div>
         <h3>The Humidor</h3>
         <p>A walk-in humidor held at a constant 68 to 70 percent humidity. Climate engineered to protect the leaf from Chiang Mai's seasonal extremes. The environment exists for the tobacco, not the theatre.</p>
       </div>
-      <div class="adv-item" data-adv="1">
-        <div class="adv-num t-label">02</div>
+      <div class="lng-item" data-lng="1">
+        <div class="lng-num t-label">02</div>
         <h3>Expert Sommelier</h3>
         <p>A personal sommelier who takes care of your cigar selection and comfort. Curated recommendations, premium spirit pairings, and lounge access. Everything handled with expert attention to your preferences.</p>
       </div>
-      <div class="adv-item" data-adv="2">
-        <div class="adv-num t-label">03</div>
+      <div class="lng-item" data-lng="2">
+        <div class="lng-num t-label">03</div>
         <h3>Tasting Lounge</h3>
         <p>Celebrating cigar culture, sharing stories with fellow connoisseurs, appreciating fine craftsmanship. An open floor welcoming anyone with a genuine interest in fine tobacco, in an atmosphere built for unhurried connection.</p>
       </div>
-      <div class="adv-item" data-adv="3">
-        <div class="adv-num t-label">04</div>
+      <div class="lng-item" data-lng="3">
+        <div class="lng-num t-label">04</div>
         <h3>Cigar Experience</h3>
         <p>Whether you have a passion for cigars or are discovering one for the first time, discuss it with fellow enthusiasts. Spacious tasting rooms with curated collections help you explore the world's finest selections.</p>
       </div>
-      <div class="adv-item" data-adv="4">
-        <div class="adv-num t-label">05</div>
+      <div class="lng-item" data-lng="4">
+        <div class="lng-num t-label">05</div>
         <h3>Premium Environment</h3>
         <p>Thirty years of tracking soil, climate, and craft. Dark walls. A properly calibrated humidor. CNX Cigars is not designed to impress. It is designed to last.</p>
       </div>
@@ -1321,9 +1321,9 @@ function toggleMobGroup(btn){var sub=btn.nextElementSibling;var isOpen=sub.class
 
 // ADVANTAGES IMAGE SWAP (active item = the one nearest the viewport centre)
 (function(){
-  const items=[...document.querySelectorAll(".adv-item")];
-  const imgs=[...document.querySelectorAll(".adv-img")];
-  const numEl=document.getElementById("advNum");
+  const items=[...document.querySelectorAll(".lng-item")];
+  const imgs=[...document.querySelectorAll(".lng-img")];
+  const numEl=document.getElementById("lngNum");
   const sec=document.getElementById("lounge");
   if(!items.length||!sec)return;
   let cur=-1,tick=false;

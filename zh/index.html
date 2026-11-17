@@ -298,24 +298,24 @@ body{font-family:var(--f-body);color:var(--cream);background:var(--ink)}
 .hours-cta{display:flex;gap:1rem;flex-wrap:wrap}
 
 /* ADVANTAGES */
-.adv{background:var(--ink-2)}
-.adv-grid{display:grid;grid-template-columns:1fr 1fr}
-.adv-img-panel{position:sticky;top:0;height:100svh;overflow:hidden}
-.adv-img{position:absolute;inset:0;opacity:0;transition:opacity .75s var(--ease-circ)}
-.adv-img.active{opacity:1}
-.adv-img img{width:100%;height:100%;object-fit:cover}
-.adv-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,transparent 55%,var(--ink-2) 100%)}
-.adv-text{padding:clamp(5rem,8vw,8rem) clamp(2rem,4vw,4rem)}
-.adv-hdr{display:flex;align-items:center;gap:.8rem;margin-bottom:3rem}
-.adv-hdr .t-label{color:var(--ash)}
-.adv-line{flex:0 0 60px;height:1px;background:var(--border-hi)}
-.adv-item{padding:2.4rem 0;border-bottom:1px solid var(--border);transition:border-color .3s}
-.adv-item:last-child{border-bottom:none}
-.adv-item:hover{border-color:var(--gold-dim)}
-.adv-num{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ash);margin-bottom:.8rem}
-.adv-item h3{font-family:var(--f-display);font-size:clamp(1.7rem,2.6vw,2.5rem);font-weight:300;color:var(--cream);margin-bottom:.75rem;transition:color .3s}
-.adv-item:hover h3{color:var(--gold)}
-.adv-item p{font-size:.92rem;line-height:1.8;color:var(--ash);max-width:400px}
+.lng{background:var(--ink-2)}
+.lng-grid{display:grid;grid-template-columns:1fr 1fr}
+.lng-img-panel{position:sticky;top:0;height:100svh;overflow:hidden}
+.lng-img{position:absolute;inset:0;opacity:0;transition:opacity .75s var(--ease-circ)}
+.lng-img.active{opacity:1}
+.lng-img img{width:100%;height:100%;object-fit:cover}
+.lng-img::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,transparent 55%,var(--ink-2) 100%)}
+.lng-text{padding:clamp(5rem,8vw,8rem) clamp(2rem,4vw,4rem)}
+.lng-hdr{display:flex;align-items:center;gap:.8rem;margin-bottom:3rem}
+.lng-hdr .t-label{color:var(--ash)}
+.lng-line{flex:0 0 60px;height:1px;background:var(--border-hi)}
+.lng-item{padding:2.4rem 0;border-bottom:1px solid var(--border);transition:border-color .3s}
+.lng-item:last-child{border-bottom:none}
+.lng-item:hover{border-color:var(--gold-dim)}
+.lng-num{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ash);margin-bottom:.8rem}
+.lng-item h3{font-family:var(--f-display);font-size:clamp(1.7rem,2.6vw,2.5rem);font-weight:300;color:var(--cream);margin-bottom:.75rem;transition:color .3s}
+.lng-item:hover h3{color:var(--gold)}
+.lng-item p{font-size:.92rem;line-height:1.8;color:var(--ash);max-width:400px}
 
 /* HUMIDOR LIST */
 .humidor{background:var(--ink);padding:clamp(5rem,9vw,9rem) 0}
@@ -432,8 +432,8 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:4.5rem
 
 /* RESPONSIVE */
 @media(max-width:1100px){
-  .adv-grid{grid-template-columns:1fr}
-  .adv-img-panel{display:none}
+  .lng-grid{grid-template-columns:1fr}
+  .lng-img-panel{display:none}
   .founder-grid{grid-template-columns:1fr}
   .founder-badge{left:0}
   .testi-card{flex:0 0 calc(50% - 1rem)}
@@ -872,43 +872,43 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:4.5rem
 </section>
 
 <!-- ADVANTAGES -->
-<section class="adv" id="lounge">
-  <div class="adv-grid">
-    <div class="adv-img-panel" aria-hidden="true">
-      <div class="adv-img active" id="advImg0"><img src="/images/cnxcigars-cnx-cigars-humidor-my-father-davidoff-selection.webp" alt="CNX Cigars保湿柜内的My Father与Davidoff雪茄精选" width="720" height="1080" loading="lazy"></div>
-      <div class="adv-img" id="advImg1"><img src="/images/cnxcigars-cnx-cigars-owner-with-cigar-box.webp" alt="CNX Cigars创始人手持顶级雪茄盒" width="720" height="1080" loading="lazy"></div>
-      <div class="adv-img" id="advImg2"><img src="/images/cnxcigars-cnx-cigars-event-night-full-room-overhead-mezzanine.webp" alt="活动之夜CNX Cigars夹层的俯瞰视角" width="720" height="1080" loading="lazy"></div>
-      <div class="adv-img" id="advImg3"><img src="/images/cnxcigars-cnx-cigars-humidor-stocked-shelves.webp" alt="CNX Cigars保湿柜内陈列的雪茄架" width="720" height="1080" loading="lazy"></div>
-      <div class="adv-img" id="advImg4"><img src="/images/cnxcigars-cnx-cigars-lounge-teal-reserved-seating-nook.webp" alt="CNX Cigars休闲会所内的青绿色预留座位角落" width="720" height="1080" loading="lazy"></div>
+<section class="lng" id="lounge">
+  <div class="lng-grid">
+    <div class="lng-img-panel" aria-hidden="true">
+      <div class="lng-img active" id="lngImg0"><img src="/images/cnxcigars-cnx-cigars-humidor-my-father-davidoff-selection.webp" alt="CNX Cigars保湿柜内的My Father与Davidoff雪茄精选" width="720" height="1080" loading="lazy"></div>
+      <div class="lng-img" id="lngImg1"><img src="/images/cnxcigars-cnx-cigars-owner-with-cigar-box.webp" alt="CNX Cigars创始人手持顶级雪茄盒" width="720" height="1080" loading="lazy"></div>
+      <div class="lng-img" id="lngImg2"><img src="/images/cnxcigars-cnx-cigars-event-night-full-room-overhead-mezzanine.webp" alt="活动之夜CNX Cigars夹层的俯瞰视角" width="720" height="1080" loading="lazy"></div>
+      <div class="lng-img" id="lngImg3"><img src="/images/cnxcigars-cnx-cigars-humidor-stocked-shelves.webp" alt="CNX Cigars保湿柜内陈列的雪茄架" width="720" height="1080" loading="lazy"></div>
+      <div class="lng-img" id="lngImg4"><img src="/images/cnxcigars-cnx-cigars-lounge-teal-reserved-seating-nook.webp" alt="CNX Cigars休闲会所内的青绿色预留座位角落" width="720" height="1080" loading="lazy"></div>
     </div>
-    <div class="adv-text">
-      <div class="adv-hdr">
-        <span id="advNum" class="t-label">01</span>
-        <div class="adv-line"></div>
+    <div class="lng-text">
+      <div class="lng-hdr">
+        <span id="lngNum" class="t-label">01</span>
+        <div class="lng-line"></div>
         <span class="t-label" style="color:var(--ash)">05</span>
       </div>
-      <div class="adv-item r" data-adv="0">
-        <div class="adv-num t-label">01</div>
+      <div class="lng-item r" data-lng="0">
+        <div class="lng-num t-label">01</div>
         <h3>雪茄保湿柜</h3>
         <p>步入式保湿柜将湿度恒定维持在68%至70%之间。经过精密设计的气候控制系统，保护烟叶免受清迈季节性气候剧变的影响。这个环境是为烟叶而存在，而非为了炫耀。</p>
       </div>
-      <div class="adv-item r d1" data-adv="1">
-        <div class="adv-num t-label">02</div>
+      <div class="lng-item r d1" data-lng="1">
+        <div class="lng-num t-label">02</div>
         <h3>专属侍茄师</h3>
         <p>专属侍茄师全程照顾您的雪茄选择与舒适体验。精选推荐、高级烈酒搭配，以及会所使用权，一切都以专业态度贴合您的偏好来安排。</p>
       </div>
-      <div class="adv-item r d2" data-adv="2">
-        <div class="adv-num t-label">03</div>
+      <div class="lng-item r d2" data-lng="2">
+        <div class="lng-num t-label">03</div>
         <h3>品鉴会所</h3>
         <p>共庆雪茄文化，与同好分享故事，欣赏精湛工艺。开放的空间欢迎任何对顶级烟草怀有真正兴趣的人士，营造出专为从容交流而设计的氛围。</p>
       </div>
-      <div class="adv-item r d3" data-adv="3">
-        <div class="adv-num t-label">04</div>
+      <div class="lng-item r d3" data-lng="3">
+        <div class="lng-num t-label">04</div>
         <h3>雪茄体验</h3>
         <p>无论您是雪茄爱好者，还是初次探索，都可与同好尽情交流。宽敞的品鉴空间与精选珍藏，助您探索世界顶级之选。</p>
       </div>
-      <div class="adv-item r d4" data-adv="4">
-        <div class="adv-num t-label">05</div>
+      <div class="lng-item r d4" data-lng="4">
+        <div class="lng-num t-label">05</div>
         <h3>顶级环境</h3>
         <p>三十年来对土壤、气候与工艺的持续钻研。深色墙面，精准调校的保湿柜。CNX Cigars 的设计初衷并非炫目一时，而是历久弥新。</p>
       </div>
@@ -1355,13 +1355,13 @@ function toggleMobGroup(btn){var sub=btn.nextElementSibling;var isOpen=sub.class
 
 // ADVANTAGES IMAGE SWAP
 (function(){
-  const items=document.querySelectorAll('.adv-item');
-  const numEl=document.getElementById('advNum');
+  const items=document.querySelectorAll('.lng-item');
+  const numEl=document.getElementById('lngNum');
   const obs=new IntersectionObserver(entries=>{
     entries.forEach(e=>{
       if(!e.isIntersecting)return;
-      const i=parseInt(e.target.dataset.adv);
-      document.querySelectorAll('.adv-img').forEach((img,idx)=>img.classList.toggle('active',idx===i));
+      const i=parseInt(e.target.dataset.lng);
+      document.querySelectorAll('.lng-img').forEach((img,idx)=>img.classList.toggle('active',idx===i));
       if(numEl)numEl.textContent='0'+(i+1);
     });
   },{threshold:.5,rootMargin:'0px 0px -15% 0px'});
