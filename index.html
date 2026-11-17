@@ -395,8 +395,6 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:4.5rem
 
 /* RESPONSIVE */
 @media(max-width:1100px){
-  .adv-grid{grid-template-columns:1fr}
-  .adv-img-panel{display:none}
   .founder-grid{grid-template-columns:1fr}
   .founder-badge{left:0}
   .testi-card{flex:0 0 calc(50% - 1rem)}
@@ -405,6 +403,8 @@ footer{background:var(--ink-2);border-top:1px solid var(--border);padding:4.5rem
   .svc-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:768px){
+  .adv-grid{grid-template-columns:1fr}
+  .adv-img-panel{display:none}
   .nav-links,.nav-cta,.nav .lang-switch-mount,.nav-right{display:none}
   .burger{display:flex}
   .about-body{flex-direction:column}
@@ -1319,20 +1319,25 @@ function toggleMobGroup(btn){var sub=btn.nextElementSibling;var isOpen=sub.class
   });
 })();
 
-// ADVANTAGES IMAGE SWAP
+// ADVANTAGES IMAGE SWAP (active item = the one nearest the viewport centre)
 (function(){
-  const items=document.querySelectorAll('.adv-item');
-  const numEl=document.getElementById('advNum');
-  const obs=new IntersectionObserver(entries=>{
-    entries.forEach(e=>{
-      if(!e.isIntersecting)return;
-      const i=parseInt(e.target.dataset.adv);
-      document.querySelectorAll('.adv-img').forEach((img,idx)=>img.classList.toggle('active',idx===i));
-      if(numEl)numEl.textContent='0'+(i+1);
-    });
-  },{threshold:.5,rootMargin:'0px 0px -15% 0px'});
-  items.forEach(item=>obs.observe(item));
-})();
+  const items=[...document.querySelectorAll(".adv-item")];
+  const imgs=[...document.querySelectorAll(".adv-img")];
+  const numEl=document.getElementById("advNum");
+  const sec=document.getElementById("lounge");
+  if(!items.length||!sec)return;
+  let cur=-1,tick=false;
+  function update(){
+    tick=false;
+    const mid=innerHeight/2;let best=0,bd=1e9;
+    items.forEach((it,i)=>{const r=it.getBoundingClientRect();const d=Math.abs(r.top+r.height/2-mid);if(d<bd){bd=d;best=i;}});
+    if(best===cur)return;cur=best;
+    imgs.forEach((im,i)=>im.classList.toggle("active",i===best));
+    if(numEl)numEl.textContent="0"+(best+1);
+  }
+  function req(){if(!tick){tick=true;requestAnimationFrame(update);}}
+  addEventListener("scroll",req,{passive:true});addEventListener("resize",req);update();
+})();;
 
 // SCROLL REVEALS
 (function(){
