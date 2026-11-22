@@ -55,3 +55,6 @@ fonts/*.otf
 # Understand Anything data dir (local knowledge-graph cache)
 .ua/
 .understand-anything/
+
+# Internal notes and tooling, never deployed (added 2026-11-22)
+/TPCA_ADVERTISING_RISK_PUNCHLIST.md
